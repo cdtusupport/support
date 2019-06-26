@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cdtu.support.mapper.SchoolMapper">
+  <resultMap id="BaseResultMap" type="com.cdtu.support.pojo.School">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="schoolName" jdbcType="VARCHAR" property="schoolname" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="isGo" jdbcType="VARCHAR" property="isgo" />
+    <result column="isNeed" jdbcType="VARCHAR" property="isneed" />
+    <result column="createTime" jdbcType="VARCHAR" property="createtime" />
+    <result column="other" jdbcType="VARCHAR" property="other" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.cdtu.support.pojo.SchoolWithBLOBs">
+    <result column="info" jdbcType="LONGVARCHAR" property="info" />
+    <result column="history" jdbcType="LONGVARCHAR" property="history" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, schoolName, city, isGo, isNeed, createTime, other
+  </sql>
+  <sql id="Blob_Column_List">
+    info, history
+  </sql>
+  <select id="selectByExampleWithBLOBs" parameterType="com.cdtu.support.pojo.SchoolExample" resultMap="ResultMapWithBLOBs">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from school
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" parameterType="com.cdtu.support.pojo.SchoolExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from school
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from school
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from school
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.cdtu.support.pojo.SchoolExample">
+    delete from school
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.cdtu.support.pojo.SchoolWithBLOBs">
+    insert into school (id, schoolName, city, 
+      isGo, isNeed, createTime, 
+      other, info, history
+      )
+    values (#{id,jdbcType=VARCHAR}, #{schoolname,jdbcType=VARCHAR}, #{city,jdbcType=VARCHAR}, 
+      #{isgo,jdbcType=VARCHAR}, #{isneed,jdbcType=VARCHAR}, #{createtime,jdbcType=VARCHAR}, 
+      #{other,jdbcType=VARCHAR}, #{info,jdbcType=LONGVARCHAR}, #{history,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.cdtu.support.pojo.SchoolWithBLOBs">
+    insert into school
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="schoolname != null">
+        schoolName,
+      </if>
+      <if test="city != null">
+        city,
+      </if>
+      <if test="isgo != null">
+        isGo,
+      </if>
+      <if test="isneed != null">
+        isNeed,
+      </if>
+      <if test="createtime != null">
+        createTime,
+      </if>
+      <if test="other != null">
+        other,
+      </if>
+      <if test="info != null">
+        info,
+      </if>
+      <if test="history != null">
+        history,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="schoolname != null">
+        #{schoolname,jdbcType=VARCHAR},
+      </if>
+      <if test="city != null">
+        #{city,jdbcType=VARCHAR},
+      </if>
+      <if test="isgo != null">
+        #{isgo,jdbcType=VARCHAR},
+      </if>
+      <if test="isneed != null">
+        #{isneed,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null">
+        #{createtime,jdbcType=VARCHAR},
+      </if>
+      <if test="other != null">
+        #{other,jdbcType=VARCHAR},
+      </if>
+      <if test="info != null">
+        #{info,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="history != null">
+        #{history,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.cdtu.support.pojo.SchoolExample" resultType="java.lang.Long">
+    select count(*) from school
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update school
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=VARCHAR},
+      </if>
+      <if test="record.schoolname != null">
+        schoolName = #{record.schoolname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.city != null">
+        city = #{record.city,jdbcType=VARCHAR},
+      </if>
+      <if test="record.isgo != null">
+        isGo = #{record.isgo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.isneed != null">
+        isNeed = #{record.isneed,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createtime != null">
+        createTime = #{record.createtime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.other != null">
+        other = #{record.other,jdbcType=VARCHAR},
+      </if>
+      <if test="record.info != null">
+        info = #{record.info,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="record.history != null">
+        history = #{record.history,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map">
+    update school
+    set id = #{record.id,jdbcType=VARCHAR},
+      schoolName = #{record.schoolname,jdbcType=VARCHAR},
+      city = #{record.city,jdbcType=VARCHAR},
+      isGo = #{record.isgo,jdbcType=VARCHAR},
+      isNeed = #{record.isneed,jdbcType=VARCHAR},
+      createTime = #{record.createtime,jdbcType=VARCHAR},
+      other = #{record.other,jdbcType=VARCHAR},
+      info = #{record.info,jdbcType=LONGVARCHAR},
+      history = #{record.history,jdbcType=LONGVARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update school
+    set id = #{record.id,jdbcType=VARCHAR},
+      schoolName = #{record.schoolname,jdbcType=VARCHAR},
+      city = #{record.city,jdbcType=VARCHAR},
+      isGo = #{record.isgo,jdbcType=VARCHAR},
+      isNeed = #{record.isneed,jdbcType=VARCHAR},
+      createTime = #{record.createtime,jdbcType=VARCHAR},
+      other = #{record.other,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cdtu.support.pojo.SchoolWithBLOBs">
+    update school
+    <set>
+      <if test="schoolname != null">
+        schoolName = #{schoolname,jdbcType=VARCHAR},
+      </if>
+      <if test="city != null">
+        city = #{city,jdbcType=VARCHAR},
+      </if>
+      <if test="isgo != null">
+        isGo = #{isgo,jdbcType=VARCHAR},
+      </if>
+      <if test="isneed != null">
+        isNeed = #{isneed,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null">
+        createTime = #{createtime,jdbcType=VARCHAR},
+      </if>
+      <if test="other != null">
+        other = #{other,jdbcType=VARCHAR},
+      </if>
+      <if test="info != null">
+        info = #{info,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="history != null">
+        history = #{history,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.cdtu.support.pojo.SchoolWithBLOBs">
+    update school
+    set schoolName = #{schoolname,jdbcType=VARCHAR},
+      city = #{city,jdbcType=VARCHAR},
+      isGo = #{isgo,jdbcType=VARCHAR},
+      isNeed = #{isneed,jdbcType=VARCHAR},
+      createTime = #{createtime,jdbcType=VARCHAR},
+      other = #{other,jdbcType=VARCHAR},
+      info = #{info,jdbcType=LONGVARCHAR},
+      history = #{history,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cdtu.support.pojo.School">
+    update school
+    set schoolName = #{schoolname,jdbcType=VARCHAR},
+      city = #{city,jdbcType=VARCHAR},
+      isGo = #{isgo,jdbcType=VARCHAR},
+      isNeed = #{isneed,jdbcType=VARCHAR},
+      createTime = #{createtime,jdbcType=VARCHAR},
+      other = #{other,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+</mapper>
