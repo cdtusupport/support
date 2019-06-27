@@ -31,9 +31,9 @@ public class SchoolController {
 
 	@GetMapping("/school/queryByName")
 	public String queryByName(@RequestParam("schoolName") String schoolName,
-	                          Map<String, Object> model){
+							  Map<String, Object> model){
 
-		if (StringUtils.isEmpty(schoolName)){
+			if (StringUtils.isEmpty(schoolName)){
 			return "redirect:/schools";
 		}
 

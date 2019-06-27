@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>layout 后台大布局 - Layui</title>
+        <link rel="stylesheet" href="../../static/layui/css/layui.css" type="text/css" media="all">
+    </head>
+    <body class="layui-layout-body">
+        <div class="layui-layout layui-layout-admin">
+            <div th:replace="common/bar::topbar"></div>
+            <div th:replace="common/bar::sidebar"></div>
+
+            <div class="layui-body">
+                <form th:action="@{/User/SelectByName}" class="layui-form" style="margin:10px 10px 10px;">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">用户查询</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="userName" placeholder="请输入姓名" class="layui-input">
+                            </div>
+                        </div>
+                        <button type="submit" class="layui-btn layui-btn-normal">查询</button>
+                        <a class="layui-btn layui-btn-danger deleteBtn " href="#" th:href="@{User/addUserPage}">
+                            新增</a>
+                    </div>
+                </form>
+                <table class="layui-table">
+                    <thead>
+                        <tr>
+                            <th>管理员编号</th>
+                            <th>管理员名称</th>
+                            <th>所属学校</th>
+                            <th>电话</th>
+                            <th>级别</th>
+                            <th>创建时间</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="user:${users}">
+                            <td th:text="${user.id}"></td>
+                            <td th:text="${user.username}"></td>
+                            <td th:text="${user.schoolname}"></td>
+                            <td th:text="${user.telephone}"></td>
+                            <td th:switch="${user.level}">
+                                <p th:case="1">超级管理员</p>
+                                <p th:case="2">管理员</p>
+                                <p th:case="*">其他</p>
+                            </td>
+                            <td th:text="${user.createtime}"></td>
+                            <td>
+                                <a class="layui-btn" href=""
+                                   th:href="@{User/deleteUser(id=${user.id})}">
+                                    编辑</a>
+                                <a class="layui-btn layui-btn-danger deleteBtn " href="uploadPage.html"
+                                   th:href="@{User/deleteUser(id=${user.id})}">
+                                    删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="layui-footer">
+                <!-- 底部固定区域 -->
+                © layui.com - 底部固定区域
+            </div>
+        </div>
+        <script src="../../static/layui/layui.js"></script>
+        <script src="../../static/jquery/jquery-3.3.1.min.js"></script>
+        <script>
+            layui.use(["layer", "form", "upload", "jquery", "element"], function () {
+                // 注意：为了动态显示进度条，必须加载element组件
+                var layer = layui.layer, upload = layui.upload, $ = layui.jquery, element = layui.element;
+                upload.render({
+                    accept: "file",
+                    elem: "#addFile",
+                    exts: 'pdf|dox', //只允许上传pdf文件
+                    auto: false,   //关闭文件自动上传
+                    bindAction: "#upload", //文件上传触发按钮
+                    url: "upload",
+                    done: function (res, index, upload) {
+                        if (res.code != 200) {
+                            layer.open({
+                                icon: 2,
+                                skin: "layui-layer-molv",
+                                content: res.msg
+                            });
+                        }
+                        location.reload();
+                    },
+                    error: function (res) {
+
+                    }
+                });
+
+            });
+        </script>
+    </body>
+</html>
