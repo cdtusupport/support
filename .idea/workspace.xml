@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="398c1338-6a8d-4305-a0fe-b75b6efb2d89" name="Default Changelist" comment="2019 6月27晚23：19 吴洋">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/User/alterUserPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/support_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/support_war_exploded.xml" afterDir="false" />
+    <list default="true" id="398c1338-6a8d-4305-a0fe-b75b6efb2d89" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/NeedController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/RoadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/NeedService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/RoadService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/NeedServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/RoadServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/need/addNeed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/need/need.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/road/addRoad.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/road/road.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/PolicyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/PolicyServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/User/UserList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/User/UserList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/User/addUserPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/User/addUserPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support.iml" beforeDir="false" afterPath="$PROJECT_DIR$/support.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/bar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/common/bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/common/bar.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,18 +41,28 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://G:/support/新建文件夹/src/main/resources/templates/common/bar.html">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="135">
+                    <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="54" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/addUserPage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="88" column="60" selection-start-line="88" selection-start-column="60" selection-end-line="88" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/UserList.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="91">
@@ -63,53 +75,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/NeedService.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/SchoolServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/NeedServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/PolicyServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/NeedController.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2237#2271#0" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/need/need.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/policy/uploadPage.html">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/need/addNeed.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="1" column="46" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="46" />
+            <state relative-caret-position="216">
+              <caret line="6" column="87" selection-start-line="6" selection-start-column="87" selection-end-line="6" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -117,7 +106,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/alterUserPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2033">
+            <state relative-caret-position="3204">
               <caret line="89" column="60" selection-start-line="89" selection-start-column="60" selection-end-line="89" selection-end-column="60" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -140,6 +129,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
               <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/bar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="461">
+              <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -194,7 +192,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/workstate/workstateAdd.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/workstate/workStatAdd.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/common/bar.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/policy/uploadPage.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/SchoolController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
@@ -207,6 +204,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/User/alterUserPage.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/User/addUserPage.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/User/UserList.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/controller/PermissionController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/common/bar.html" />
       </list>
     </option>
   </component>
@@ -218,7 +217,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -227,6 +226,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -304,6 +304,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="support" type="b2602c69:ProjectViewProjectNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="support" type="b2602c69:ProjectViewProjectNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
               <item name="sql" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -329,6 +348,15 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="support" type="b2602c69:ProjectViewProjectNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="need" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="support" type="b2602c69:ProjectViewProjectNode" />
@@ -425,7 +453,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -437,7 +464,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/User" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -447,24 +474,24 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.cdtu.support.service.impl" />
-      <recent name="com.cdtu.support.service" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\templates\User" />
-      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\templates\workstate" />
-      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\templates" />
-      <recent name="C:\Users\asus\IdeaProjects\support\src\main\java\com\cdtu\support\controller" />
-      <recent name="C:\Users\asus\IdeaProjects\support\src\main\java\com\cdtu\support\service\impl" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.cdtu.support.controller" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static" />
       <recent name="C:\Users\asus\IdeaProjects\support" />
       <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\templates" />
+      <recent name="C:\Users\asus\IdeaProjects\support\src\main\java\com\cdtu\support\controller" />
+      <recent name="C:\Users\asus\IdeaProjects\support\src\main\java\com\cdtu\support\service\impl" />
+      <recent name="C:\Users\asus\IdeaProjects\support\src\main\java\com\cdtu\support\service" />
+      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\templates\User" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cdtu.support.controller" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.cdtu.support.service.impl" />
+      <recent name="com.cdtu.support.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -530,6 +557,7 @@
       <workItem from="1561642188624" duration="1587000" />
       <workItem from="1561648640014" duration="830000" />
       <workItem from="1561686854003" duration="11097000" />
+      <workItem from="1561699896538" duration="836000" />
     </task>
     <task id="LOCAL-00001" summary="ceshi">
       <created>1561530394230</created>
@@ -587,17 +615,24 @@
       <option name="project" value="LOCAL" />
       <updated>1561648823697</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="2019年6月28 13：33吴洋">
+      <created>1561700057280</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1561700057281</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50272000" />
+    <option name="totallyTimeSpent" value="51108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17004265" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1716418" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -607,7 +642,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.86886996" weight="0.28199565" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.86886996" visible="true" weight="0.28199565" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8614072" weight="0.64425164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -689,7 +724,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ceshi" />
     <MESSAGE value="2019 6月27晚23：19 吴洋" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019 6月27晚23：19 吴洋" />
+    <MESSAGE value="2019年6月28 13：33吴洋" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019年6月28 13：33吴洋" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -709,65 +745,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/classes/com/cdtu/support/mapper/PolicyMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3276">
-          <caret line="91" selection-start-line="91" selection-end-line="94" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/pojo/PolicyExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/学习/CDTU_SSM_Demo/target/SSM_Demo/WEB-INF/views/student/courseList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2016">
-          <caret line="56" column="19" selection-start-line="45" selection-start-column="8" selection-end-line="56" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/mapper/PolicyMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/PolicyServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/SupportApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/ce.java" />
-    <entry file="file://D:/学习/CDTU_SSM_Demo/src/main/webapp/WEB-INF/views/teacher/teacherInfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="31" column="66" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="66" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/学习/CDTU_SSM_Demo/src/main/webapp/WEB-INF/views/teacher/courseList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="123" column="9" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workstate/list.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workstate/uploadPage.html" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/umeditor/jsp/imageUp.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/umeditor/jsp/getContent.jsp" />
     <entry file="file://$PROJECT_DIR$/target/classes/static/umeditor/jsp/imageUp.jsp" />
@@ -845,13 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3672">
           <caret line="102" selection-start-line="102" selection-end-line="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/bar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1548">
-          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -938,9 +908,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/addUserPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3168">
+          <caret line="88" column="60" selection-start-line="88" selection-start-column="60" selection-end-line="88" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
+        <state relative-caret-position="1260">
           <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -950,29 +927,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/SchoolServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="2088">
           <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/PolicyServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+        <state relative-caret-position="720">
+          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="1548">
+          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -983,33 +956,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2237#2271#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/addUserPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="88" column="60" selection-start-line="88" selection-start-column="60" selection-end-line="88" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/alterUserPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2033">
+        <state relative-caret-position="3204">
           <caret line="89" column="60" selection-start-line="89" selection-start-column="60" selection-end-line="89" selection-end-column="60" />
           <folding>
             <element signature="n#style#0;n#input#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/controller/SchoolController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/controller/SystemController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/controller/PermissionController.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/UserList.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1018,6 +995,46 @@
           <folding>
             <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/NeedService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/NeedServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/NeedController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/need/need.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/need/addNeed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" column="87" selection-start-line="6" selection-start-column="87" selection-end-line="6" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/support/新建文件夹/src/main/resources/templates/common/bar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/bar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
         </state>
       </provider>
     </entry>
