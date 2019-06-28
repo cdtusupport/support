@@ -9,4 +9,6 @@ public interface UserService {
     List<User> queryAll();
     List<User> queryByName(String name);
     void deleteByPrimaryKey(String id);
+    void addUser(User user);
+    User queryById(String  id);
 }
