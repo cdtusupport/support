@@ -20,14 +20,14 @@
 
             <div class="layui-form-item">
                 <label class="layui-form-label">高校名称</label>
-                <div class="layui-input-block">
+                <div class="layui-input-inline">
                     <input type="text" name="schoolname" th:value="${school.schoolname}" required  lay-verify="required"  autocomplete="off" class="layui-input">
                 </div>
             </div>
 
             <div class="layui-form-item">
                 <label class="layui-form-label">城市</label>
-                <div class="layui-input-block">
+                <div class="layui-input-inline">
                     <select name="city" lay-verify="required">
                         <option value=""></option>
                         <option value="北京" th:selected="${school.city=='北京'}">北京</option>
@@ -42,14 +42,14 @@
 
             <div class="layui-form-item layui-form-text">
                 <label class="layui-form-label">高校简介</label>
-                <div class="layui-input-block">
+                <div class="layui-input-inline">
                     <textarea name="info" th:value="${school.info}" th:text="${school.info}" class="layui-textarea"></textarea>
                 </div>
             </div>
 
             <div class="layui-form-item">
                 <label class="layui-form-label">愿意支援</label>
-                <div class="layui-input-block">
+                <div class="layui-input-inline">
                     <input type="radio" name="isgo" value="yes" title="是" th:checked="${school.isgo=='yes'}">
                     <input type="radio" name="isgo" value="no" title="否" th:checked="${school.isgo=='no'}">
                 </div>
@@ -57,7 +57,7 @@
 
             <div class="layui-form-item">
                 <label class="layui-form-label">需要支援</label>
-                <div class="layui-input-block">
+                <div class="layui-input-inline">
                     <input type="radio" name="isneed" value="yes" title="是" th:checked="${school.isneed=='yes'}">
                     <input type="radio" name="isneed" value="no" title="否" th:checked="${school.isneed=='no'}">
                 </div>
@@ -65,7 +65,7 @@
 
             <div class="layui-form-item layui-form-text">
                 <label class="layui-form-label">高校历史</label>
-                <div class="layui-input-block">
+                <div class="layui-input-inline">
                     <textarea name="history" th:value="${school.history}" th:text="${school.history}" class="layui-textarea"></textarea>
                 </div>
             </div>

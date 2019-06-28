@@ -55,7 +55,7 @@
                     <button th:attr="del_uri=@{/school(id=${school.id},pageNum=${currentPage},pageSize=${pageSize})}"
                             class="layui-btn layui-btn-danger deleteBtn">删除
                     </button>
-                    <a class="layui-btn" th:href="@{/school/toUpdatePage(id=${school.id})}">查看</a>
+                    <a class="layui-btn" th:href="@{/school/toUpdatePage(id=${school.id},,pageNum=${currentPage},pageSize=${pageSize})}">查看</a>
                 </td>
             </tr>
             </tbody>

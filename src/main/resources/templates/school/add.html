@@ -17,14 +17,14 @@
         <form class="layui-form" th:action="@{/school}" method="post">
             <div class="layui-form-item">
                 <label class="layui-form-label">高校名称</label>
-                <div class="layui-input-block">
+                <div class="layui-input-inline">
                     <input type="text" name="schoolname" required  lay-verify="required" placeholder="请输入学校名称" autocomplete="off" class="layui-input">
                 </div>
             </div>
 
             <div class="layui-form-item">
-                <label class="layui-form-label">选择框</label>
-                <div class="layui-input-block">
+                <label class="layui-form-label">城市</label>
+                <div class="layui-input-inline">
                     <select name="city" lay-verify="required">
                         <option value=""></option>
                         <option value="北京">北京</option>
@@ -39,7 +39,7 @@
 
             <div class="layui-form-item layui-form-text">
                 <label class="layui-form-label">高校简介</label>
-                <div class="layui-input-block">
+                <div class="layui-input-inline">
                     <textarea name="info" placeholder="请输入内容" class="layui-textarea"></textarea>
                 </div>
             </div>
@@ -62,7 +62,7 @@
 
             <div class="layui-form-item layui-form-text">
                 <label class="layui-form-label">高校历史</label>
-                <div class="layui-input-block">
+                <div class="layui-input-inline">
                     <textarea name="history" placeholder="请输入内容" class="layui-textarea"></textarea>
                 </div>
             </div>

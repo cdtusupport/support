@@ -52,10 +52,10 @@
                 <td th:text="${school.createtime}"></td>
                 <td>
                     <!--<a class="layui-btn" th:href="@{/school/toUpdatePage/}+${school.id}">编辑</a>-->
-                    <a class="layui-btn" th:href="@{/school/toUpdatePage(id=${school.id})}">编辑</a>
+                    <a class="layui-btn" th:href="@{/school/toUpdatePage(id=${school.id},pageNum=${pageNum},pageSize=${pageSize})}">编辑</a>
                     <button th:attr="del_uri=@{/school(id=${school.id})}" class="layui-btn layui-btn-danger deleteBtn">删除
                     </button>
-                    <a class="layui-btn" th:href="@{/school/toUpdatePage(id=${school.id})}">查看</a>
+                    <a class="layui-btn" th:href="@{/school/toUpdatePage(id=${school.id},pageNum=${pageNum},pageSize=${pageSize})}">查看</a>
                 </td>
             <!--<tr th:each="school : ${schools}">-->
                 <!---->
