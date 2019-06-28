@@ -32,6 +32,8 @@
                             <th>管理员名称</th>
                             <th>所属学校</th>
                             <th>电话</th>
+                            <th>qq</th>
+                            <th>邮箱</th>
                             <th>级别</th>
                             <th>创建时间</th>
                             <th>操作</th>
@@ -43,6 +45,8 @@
                             <td th:text="${user.username}"></td>
                             <td th:text="${user.schoolname}"></td>
                             <td th:text="${user.telephone}"></td>
+                            <td th:text="${user.qq}"></td>
+                            <td th:text="${user.email}"></td>
                             <td th:switch="${user.level}">
                                 <p th:case="1">超级管理员</p>
                                 <p th:case="2">管理员</p>
@@ -51,10 +55,10 @@
                             <td th:text="${user.createtime}"></td>
                             <td>
                                 <a class="layui-btn" href=""
-                                   th:href="@{User/deleteUser(id=${user.id})}">
+                                   th:href="@{/User/alterUserPage(id=${user.id})}">
                                     编辑</a>
                                 <a class="layui-btn layui-btn-danger deleteBtn " href="uploadPage.html"
-                                   th:href="@{User/deleteUser(id=${user.id})}">
+                                   th:href="@{/User/deleteUser(id=${user.id})}">
                                     删除</a>
                             </td>
                         </tr>
@@ -97,5 +101,7 @@
 
             });
         </script>
+
+
     </body>
 </html>

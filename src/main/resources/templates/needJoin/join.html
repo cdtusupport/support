@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>layout 后台大布局 - Layui</title>
+    <link rel="stylesheet" href="../../static/layui/css/layui.css" type="text/css">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+
+    <div th:replace="common/bar::topbar"></div>
+    <div th:replace="common/bar::sidebar"></div>
+
+    <div class="layui-body">
+        <!-- 内容主体区域 -->
+        <form class="layui-form" th:action="@{/needJoin/join}" method="post">
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">请选择需求</label>
+                <div class="layui-input-block">
+                    <select name="inNeedId"  >
+                        <option value=""></option>
+                        <option th:value="${needInfo.id}" th:text="${needInfo.name}" th:each="needInfo:${needInfoList}">
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-block">
+                    <input type="text" name="username" required  lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-block">
+                    <input type="text" name="telephone" required  lay-verify="required" placeholder="请输入手机号" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">请选择所属学校</label>
+                <div class="layui-input-block">
+                    <select name="schoolName" lay-verify="required">
+                        <option value=""></option>
+                        <option th:value="${school.schoolname}" th:text="${school.schoolname}" th:each="school:${schoolList}"></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-block">
+                    <input type="text" name="qq" required  lay-verify="required" placeholder="请输入QQ" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-block">
+                    <input type="text" name="course" required  lay-verify="required" placeholder="请输入课程名" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" type="submit">立即提交</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="layui-footer">
+        <!-- 底部固定区域 -->
+        © layui.com - 底部固定区域
+    </div>
+</div>
+<script src="../../static/layui/layui.js"></script>
+<script src="../../static/jquery/jquery-3.3.1.min.js"></script>
+
+<script>
+    layui.use('form', function(){
+        var form = layui.form;
+        //监听提交
+        form.on('submit(formDemo)', function(data){
+            layer.msg(JSON.stringify(data.field));
+            return false;
+        });
+        form.render();
+    });
+</script>
+</body>
+</html>

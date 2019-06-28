@@ -8,6 +8,7 @@ import com.cdtu.support.pojo.User;
 import com.cdtu.support.service.SchoolService;
 import com.cdtu.support.service.UserService;
 import com.github.pagehelper.PageHelper;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
@@ -20,6 +21,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
@@ -37,19 +39,41 @@ public class UserController {
      * @return
      */
 
-    @GetMapping("/UserList")
-    public String showUserList(Map<String, Object> model){
-        PageHelper.startPage(1,10);
-        List<User> userList = userService.queryAll();;
-        model.put("users", userList);
-        return "User/UserList";
-    }
+
     @GetMapping("/User/addUserPage")
     public String addUserPage(Map<String, Object> model){
         List<SchoolWithBLOBs> schoolList = schoolService.queryAll();
         System.out.println(schoolList.size());
         model.put("schools", schoolList);
         return "User/addUserPage";
+    }
+    @GetMapping("/User/alterUserPage")
+    public String alterUserPage(String id, Map<String, Object> model){
+        List<SchoolWithBLOBs> schoolList = schoolService.queryAll();
+        User user=userService.queryById(id);
+        model.put("user",user);
+        model.put("schools", schoolList);
+        System.out.println("ceshi");
+        return "User/alterUserPage";
+    }
+    @PostMapping(value = "/User/addUser")
+    public String addUser(User user){
+        userService.deleteByPrimaryKey(user.getId());
+        user.setId(UUID.randomUUID().toString().substring(0,5));
+        List<SchoolWithBLOBs> schoolWithBLOBs= schoolService.queryByName(user.getSchoolname());
+        user.setSchoolid(schoolWithBLOBs.get(0).getId());
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+        user.setCreatetime(df.format(new Date()));
+        System.out.println(user.toString());
+        userService.addUser(user);
+        return "redirect:/UserList";
+    }
+    @GetMapping("/UserList")
+    public String showUserList(Map<String, Object> model){
+        PageHelper.startPage(1,10);
+        List<User> userList = userService.queryAll();;
+        model.put("users", userList);
+        return "User/UserList";
     }
     @GetMapping("/User/SelectByName")
     public String SelectByName(@RequestParam("userName") String userName, Map<String, Object> model){
@@ -60,9 +84,11 @@ public class UserController {
         if (userList==null){
             return "redirect:/UserList";
         }
+        System.out.println(userList.toString());
         model.put("users", userList);
-        return "redirect:/UserList";
+        return "User/UserList";
     }
+
     @GetMapping("/User/deleteUser")
     public String deleteUser(String id){
         userService.deleteByPrimaryKey(id);

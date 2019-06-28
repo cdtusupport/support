@@ -10,9 +10,8 @@
         <div class="layui-layout layui-layout-admin">
             <div th:replace="common/bar::topbar"></div>
             <div th:replace="common/bar::sidebar"></div>
-
             <div class="layui-body">
-                <form class="layui-form" th:action="@{/User/addUser}" method="post">
+                <form class="layui-form" action="">
                     <div class="layui-form-item">
                         <label class="layui-form-label">管理员名称</label>
                         <div class="layui-input-inline">
@@ -29,7 +28,7 @@
                         <div class="layui-inline">
                             <label class="layui-form-label">手机</label>
                             <div class="layui-input-inline">
-                                <input type="tel" name="telephone" lay-verify="required|phone" autocomplete="off" value="13540430898" class="layui-input">
+                                <input type="tel" name="telephone" lay-verify="required|phone" autocomplete="off" class="layui-input">
                             </div>
                         </div>
                     </div>
@@ -37,7 +36,7 @@
                         <div class="layui-inline">
                             <label class="layui-form-label">邮箱</label>
                             <div class="layui-input-inline">
-                                <input type="text" name="email" lay-verify="email" autocomplete="off" value="13540430898@qq.com" class="layui-input">
+                                <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
                             </div>
                         </div>
                     </div>
@@ -52,8 +51,8 @@
                     <div class="layui-form-item">
                         <label class="layui-form-label">所属学校</label>
                         <div class="layui-input-inline">
-                            <select   name="schoolname" lay-filter="aihao">
-                                <option th:each="school:${schools}" th:value="${school.schoolname}" th:text="${school.schoolname}"></option>
+                            <select   name="schoolId" lay-filter="aihao">
+                                <option th:each="school:${schools}" th:value="${school.id}" th:text="${school.id}"></option>
                             </select>
                         </div>
                     </div>
@@ -66,7 +65,7 @@
                     </div>
                     <div class="layui-form-item">
                         <div class="layui-input-block">
-                            <button class="layui-btn" lay-submit lay-filter="formDemo" type="submit">立即提交</button>
+                            <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
                             <button type="reset" class="layui-btn layui-btn-primary">重置</button>
                         </div>
                     </div>
@@ -82,21 +81,20 @@
         <script src="../../static/jquery/jquery-3.3.1.min.js"></script>
 
         <script>
-            //Demo
             layui.use('form', function(){
                 var form = layui.form;
                 //监听提交
-                form.on('submit(formDemo)', function(data1){
-                    console.log(JSON.stringify(data1.field))
-                    return true;
+                form.on('submit(formDemo)', function(data){
+                    layer.msg(JSON.stringify(data.field));
+                    return false;
                 });
             });
         </script>
 
         <script>
             layui.use(["layer", "form", "upload", "jquery", "element"], function () {
-                // 注意：为了动态显示进度条，必须加载element组件
-                         });
+
+            });
         </script>
     </body>
 </html>

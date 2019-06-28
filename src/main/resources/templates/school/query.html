@@ -26,6 +26,7 @@
             </div>
         </form>
 
+
         <table class="layui-table">
             <thead>
             <tr>
@@ -41,7 +42,6 @@
             </tr>
             </thead>
             <tbody>
-            <tr th:each="school : ${schools}">
                 <td th:text="${school.id}"></td>
                 <td th:text="${school.schoolname}"></td>
                 <td th:text="${school.city}"></td>
@@ -51,39 +51,43 @@
                 <td th:text="${school.history}"></td>
                 <td th:text="${school.createtime}"></td>
                 <td>
-                    <a class="layui-btn" th:href="@{/school/toUpdatePage(id=${school.id},pageNum=${currentPage},pageSize=${pageSize})}">编辑</a>
-                    <button th:attr="del_uri=@{/school(id=${school.id},pageNum=${currentPage},pageSize=${pageSize})}"
-                            class="layui-btn layui-btn-danger deleteBtn">删除
+                    <!--<a class="layui-btn" th:href="@{/school/toUpdatePage/}+${school.id}">编辑</a>-->
+                    <a class="layui-btn" th:href="@{/school/toUpdatePage(id=${school.id})}">编辑</a>
+                    <button th:attr="del_uri=@{/school(id=${school.id})}" class="layui-btn layui-btn-danger deleteBtn">删除
                     </button>
                     <a class="layui-btn" th:href="@{/school/toUpdatePage(id=${school.id})}">查看</a>
                 </td>
-            </tr>
+            <!--<tr th:each="school : ${schools}">-->
+                <!---->
+            <!--</tr>-->
+
             </tbody>
         </table>
+        <a class="layui-btn" th:href="@{/school/toFirstPage}">返回首页</a>
 
-        <nav>
-            <ul>
-                <li class="layui-btn ">
-                    <a th:href="@{/school/list(pageNum=1,pageSize=${pageSize})}">首页</a>
-                </li>
-                <li class="layui-btn" th:if="${currentPage} gt -1">
-                    <a th:href="@{/school/list(pageNum=(${currentPage}-1),pageSize=${pageSize})}">上一页</a>
-                </li>
-                <li class="layui-btn" th:if="${currentPage} lt 1">
-                    <a th:href="@{/school/list(pageNum=1, pageSize=${pageSize})}">上一页</a>
-                </li>
-                <li class="layui-btn" th:if="${currentPage} lt ${pages}">
-                    <a th:href="@{/school/list(pageNum=(${currentPage}+1),pageSize=${pageSize})}">下一页</a>
-                </li>
-                <li class="layui-btn" th:if="${currentPage} ge ${pages}">
-                    <a th:href="@{/school/list(pageNum=${pages}, pageSize=${pageSize})}">下一页</a>
-                </li>
-                <li class="layui-btn">
-                    <a th:href="@{/school/list(pageNum=${pages}, pageSize=${pageSize})}">末页</a>
-                </li>
-            </ul>
+            <!--<nav >
+                <ul >
+                    <li class="layui-btn " >
+                        <a th:href="@{/schools(pageNum=1,pageSize=${pageSize})}">首页</a>
+                    </li>
+                    <li class="layui-btn" th:if="${currentPage} gt 0">
+                        <a th:href="@{/schools(pageNum=(${currentPage}-1),pageSize=${pageSize})}">上一页</a>
+                    </li>
+                    <li class="layui-btn" th:if="${currentPage} lt 1">
+                        <a th:href="@{/schools(pageNum=1, pageSize=${pageSize})}">上一页</a>
+                    </li>
+                    <li class="layui-btn" th:if="${currentPage} lt ${pages}">
+                        <a th:href="@{/schools(pageNum=(${currentPage}+1),pageSize=${pageSize})}">下一页</a>
+                    </li>
+                    <li class="layui-btn" th:if="${currentPage} ge ${pages}">
+                        <a th:href="@{/schools(pageNum=${pages}, pageSize=${pageSize})}">下一页</a>
+                    </li>
+                    <li class="layui-btn">
+                        <a th:href="@{/schools(pageNum=${pages}, pageSize=${pageSize})}">末页</a>
+                    </li>
+                </ul>
 
-        </nav>
+            </nav>-->
 
         <form id="deleteSchoolForm" method="post">
             <input type="hidden" name="_method" value="delete">

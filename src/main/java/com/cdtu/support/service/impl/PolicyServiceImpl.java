@@ -25,7 +25,7 @@ public class PolicyServiceImpl implements PolicyService {
     @Override
     public void addAlterPolicy(Policy policy) {
 
-        policyMapper.insert(policy);
+        policyMapper.insertSelective(policy);
         return ;
     }
 

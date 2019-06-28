@@ -13,10 +13,11 @@
 
             <div class="layui-body">
                 <form class="layui-form" th:action="@{/User/addUser}" method="post">
+                    <input type="text" name="id" style="display:none"  th:value="${user.id}" >
                     <div class="layui-form-item">
                         <label class="layui-form-label">管理员名称</label>
                         <div class="layui-input-inline">
-                            <input type="text" name="username" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                            <input type="text" name="username" required  lay-verify="required" th:value="${user.username}" placeholder="请输入用户名" autocomplete="off" class="layui-input">
                         </div>
                     </div>
                     <div class="layui-form-item">
@@ -29,7 +30,7 @@
                         <div class="layui-inline">
                             <label class="layui-form-label">手机</label>
                             <div class="layui-input-inline">
-                                <input type="tel" name="telephone" lay-verify="required|phone" autocomplete="off" value="13540430898" class="layui-input">
+                                <input type="tel" name="telephone" lay-verify="required|phone" autocomplete="off" th:value="${user.telephone}" class="layui-input">
                             </div>
                         </div>
                     </div>
@@ -37,7 +38,7 @@
                         <div class="layui-inline">
                             <label class="layui-form-label">邮箱</label>
                             <div class="layui-input-inline">
-                                <input type="text" name="email" lay-verify="email" autocomplete="off" value="13540430898@qq.com" class="layui-input">
+                                <input type="text" name="email" lay-verify="email" autocomplete="off" th:value="${user.email}" class="layui-input">
                             </div>
                         </div>
                     </div>
@@ -45,7 +46,7 @@
                         <div class="layui-inline">
                             <label class="layui-form-label">qq</label>
                             <div class="layui-input-inline">
-                                <input type="text" name="qq"  autocomplete="off" class="layui-input">
+                                <input type="text" name="qq"  autocomplete="off" th:value="${user.qq}" class="layui-input">
                             </div>
                         </div>
                     </div>

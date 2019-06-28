@@ -1,10 +1,12 @@
 package com.cdtu.support.service.impl;
 
+
 import com.cdtu.support.mapper.SchoolMapper;
 import com.cdtu.support.pojo.School;
 import com.cdtu.support.pojo.SchoolExample;
 import com.cdtu.support.pojo.SchoolWithBLOBs;
 import com.cdtu.support.service.SchoolService;
+import com.cdtu.support.util.SupportUtil;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,6 +33,8 @@ public class SchoolServiceImpl implements SchoolService {
 		}
 
 		schoolWithBLOBs.setId(UUID.randomUUID().toString().substring(0,5));
+		schoolWithBLOBs.setCreatetime(SupportUtil.getTime());
+		schoolWithBLOBs.setOther("other");
 
 		int result = schoolMapper.insertSelective(schoolWithBLOBs);
 
@@ -48,6 +52,12 @@ public class SchoolServiceImpl implements SchoolService {
 		int result = schoolMapper.deleteByPrimaryKey(id);
 
 		return result;
+	}
+
+	@Override
+	public SchoolWithBLOBs queryById(String id) {
+		SchoolWithBLOBs schoolWithBLOBs = schoolMapper.selectByPrimaryKey(id);
+		return schoolWithBLOBs;
 	}
 
 	@Override
@@ -72,8 +82,7 @@ public class SchoolServiceImpl implements SchoolService {
 	}
 
 	@Override
-	public SchoolWithBLOBs queryByName(String schoolName) {
-
+	public List<SchoolWithBLOBs> queryByName(String schoolName) {
 		SchoolExample schoolExample = new SchoolExample();
 		SchoolExample.Criteria criteria = schoolExample.createCriteria();
 		criteria.andSchoolnameEqualTo(schoolName);
@@ -84,7 +93,7 @@ public class SchoolServiceImpl implements SchoolService {
 			return null;
 		}
 
-		return schoolWithBLOBsList.get(0);
+		return schoolWithBLOBsList;
 	}
 
 	@Override

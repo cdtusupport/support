@@ -10,11 +10,13 @@ public interface SchoolService {
 
 	Integer deleteSchool(String id);
 
+	SchoolWithBLOBs queryById(String id);
+
 	Integer updateSchool(SchoolWithBLOBs schoolWithBLOBs);
 
 	List<SchoolWithBLOBs> queryAll();
 
-	SchoolWithBLOBs queryByName(String schoolName);
+	List<SchoolWithBLOBs> queryByName(String schoolName);
 
 	List<SchoolWithBLOBs> queryByCity(String city);
 
