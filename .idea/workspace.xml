@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="398c1338-6a8d-4305-a0fe-b75b6efb2d89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/PermissionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/PermissionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/permission/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cdtu/support/service/impl/PermissionServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/support_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/support_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdtu/support/generator/MybatisGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/generator/MybatisGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdtu/support/generator/mybatis-generator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/generator/mybatis-generator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdtu/support/sql/support.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/sql/support.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support.iml" beforeDir="false" afterPath="$PROJECT_DIR$/support.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdtu/support/generator/MybatisGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cdtu/support/generator/MybatisGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/common/bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/common/bar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/school/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/school/list.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -97,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/cdtu/support/service/impl/PermissionServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+            <state relative-caret-position="323">
+              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -388,7 +375,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561788270935" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561788408429" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -526,7 +513,7 @@
       <workItem from="1561686854003" duration="11097000" />
       <workItem from="1561704126508" duration="2185000" />
       <workItem from="1561714747370" duration="2362000" />
-      <workItem from="1561775783277" duration="9186000" />
+      <workItem from="1561775783277" duration="9331000" />
     </task>
     <task id="LOCAL-00001" summary="ceshi">
       <created>1561530394230</created>
@@ -598,11 +585,23 @@
       <option name="project" value="LOCAL" />
       <updated>1561779623710</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="2019 6月29 11:39 游元博&#10;新增role、permission、role_permission类以及dao接口">
+      <created>1561788381849</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1561788381849</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="PermissionServiceImplTest_queryAllRole - 2019.06.29 at 14h 05m 11s.xml">
+      <configuration name="PermissionServiceImplTest.queryAllRole" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64005000" />
+    <option name="totallyTimeSpent" value="64150000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -704,7 +703,8 @@
     <MESSAGE value="2019 6月27晚23：19 吴洋" />
     <MESSAGE value="2019 6月29 10:43 游元博" />
     <MESSAGE value="2019 6月29 11:39 游元博&#10;实现了认证登录" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019 6月29 11:39 游元博&#10;实现了认证登录" />
+    <MESSAGE value="2019 6月29 11:39 游元博&#10;新增role、permission、role_permission类以及dao接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019 6月29 11:39 游元博&#10;新增role、permission、role_permission类以及dao接口" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1096,8 +1096,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/cdtu/support/service/impl/PermissionServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        <state relative-caret-position="323">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
         </state>
       </provider>
     </entry>
