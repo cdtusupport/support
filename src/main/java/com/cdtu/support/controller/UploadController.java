@@ -3,6 +3,7 @@ package com.cdtu.support.controller;
 
 import com.cdtu.support.pojo.Policy;
 import com.cdtu.support.service.PolicyService;
+import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.apache.ibatis.jdbc.Null;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.ResourceUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -34,10 +36,15 @@ public class UploadController {
 
 
     @GetMapping("/uploadPage")
-    public String showUploadPage(Map<String, Object> model){
-        PageHelper.startPage(1,10);
+    public String showUploadPage(@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
+                                 @RequestParam(value = "pageSize", defaultValue = "6") Integer pageSize,
+                                 Map<String, Object> model) {
+        Page<Object> page = PageHelper.startPage(pageNum, pageSize);
         List<Policy> policyList = policyService.queryAll();;
         model.put("policys", policyList);
+        model.put("currentPage", pageNum);
+        model.put("pages", page.getPages());
+        model.put("pageSize", pageSize);
         return "policy/uploadPage";
     }
     @GetMapping("/delectPolicy")

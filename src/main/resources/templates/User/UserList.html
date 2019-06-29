@@ -64,6 +64,29 @@
                         </tr>
                     </tbody>
                 </table>
+                <nav>
+                    <ul>
+                        <li class="layui-btn ">
+                            <a th:href="@{/UserList(pageNum=1,pageSize=${pageSize})}">首页</a>
+                        </li>
+                        <li class="layui-btn" th:if="${currentPage} gt -1">
+                            <a th:href="@{/UserList(pageNum=(${currentPage}-1),pageSize=${pageSize})}">上一页</a>
+                        </li>
+                        <li class="layui-btn" th:if="${currentPage} lt 1">
+                            <a th:href="@{/UserList(pageNum=1, pageSize=${pageSize})}">上一页</a>
+                        </li>
+                        <li class="layui-btn" th:if="${currentPage} lt ${pages}">
+                            <a th:href="@{/UserList(pageNum=(${currentPage}+1),pageSize=${pageSize})}">下一页</a>
+                        </li>
+                        <li class="layui-btn" th:if="${currentPage} ge ${pages}">
+                            <a th:href="@{/UserList(pageNum=${pages}, pageSize=${pageSize})}">下一页</a>
+                        </li>
+                        <li class="layui-btn">
+                            <a th:href="@{/UserList(pageNum=${pages}, pageSize=${pageSize})}">末页</a>
+                        </li>
+                    </ul>
+
+                </nav>
             </div>
 
             <div class="layui-footer">
