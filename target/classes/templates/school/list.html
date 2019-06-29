@@ -101,5 +101,33 @@
     });
 
 </script>
+    <script>
+        layui.use(["layer", "form", "upload", "jquery", "element"], function () {
+            // 注意：为了动态显示进度条，必须加载element组件
+            var layer = layui.layer, upload = layui.upload, $ = layui.jquery, element = layui.element;
+            upload.render({
+                accept: "file",
+                elem: "#addFile",
+                exts: 'pdf|dox', //只允许上传pdf文件
+                auto: false,   //关闭文件自动上传
+                bindAction: "#upload", //文件上传触发按钮
+                url: "upload",
+                done: function (res, index, upload) {
+                    if (res.code != 200) {
+                        layer.open({
+                            icon: 2,
+                            skin: "layui-layer-molv",
+                            content: res.msg
+                        });
+                    }
+                    location.reload();
+                },
+                error: function (res) {
+
+                }
+            });
+
+        });
+    </script>
 </body>
 </html>
