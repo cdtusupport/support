@@ -25,7 +25,7 @@ public class LoginController {
 	UserService userService;
 
 	@GetMapping("/toLogin")
-	public String toLogin(){
+	public String toLogin() {
 		return "login";
 	}
 
@@ -34,7 +34,7 @@ public class LoginController {
 	                    String password,
 	                    Model model,
 	                    HttpServletRequest httpServletRequest
-	                    ){
+	) {
 
 		//1、获取subject
 		Subject subject = SecurityUtils.getSubject();
@@ -56,7 +56,7 @@ public class LoginController {
 		} catch (UnknownAccountException e) {
 			model.addAttribute("message", "用户名不存在");
 			return "login";
-		}catch (IncorrectCredentialsException e){
+		} catch (IncorrectCredentialsException e) {
 			model.addAttribute("message", "密码不正确");
 			return "login";
 		}
