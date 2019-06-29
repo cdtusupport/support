@@ -36,10 +36,17 @@
                         <div class="container-login100-form-btn p-t-10">
                             <button class="login100-form-btn" name="sub" id="contact-submit" type="submit">登 录</button>
                         </div>
-                        <h1 th:text="${message}"></h1>
+
                     </form>
+                    <input th:value="${message}" type="hidden" id="message" name="message">
                     <script src="../static/jquery/jquery-3.3.1.min.js"></script>
                     <script src="../static/login/js/main.js"></script>
+                    <script>
+                        var message1= document.getElementById("message").value;
+                        if (message1!=null){
+                            alert(message1)
+                        }
+                    </script>
                 </div>
             </div>
         </div>
