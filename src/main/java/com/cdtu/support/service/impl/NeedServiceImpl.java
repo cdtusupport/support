@@ -1,10 +1,9 @@
 package com.cdtu.support.service.impl;
 
 import com.cdtu.support.mapper.NeedInfoMapper;
-import com.cdtu.support.mapper.SchoolMapper;
 import com.cdtu.support.pojo.*;
 import com.cdtu.support.service.NeedService;
-import com.cdtu.support.service.SchoolService;
+import com.cdtu.support.util.SupportUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +18,18 @@ public class NeedServiceImpl implements NeedService {
 
 	@Override
 	public Integer addNeed(NeedInfo needInfo) {
+		NeedInfoExample needInfoExample=new NeedInfoExample();
+		NeedInfoExample .Criteria criteria=needInfoExample.createCriteria();
+		criteria.andNameEqualTo(needInfo.getName());
+		List<NeedInfo> needInfoList=needInfoMapper.selectByExampleWithBLOBs(needInfoExample);
+		if (needInfoList.size()!=0)
+		{
+
+			return 0;
+		}
 		needInfo.setId(UUID.randomUUID().toString().substring(0,5));
+		needInfo.setPublishtime(SupportUtil.getTime());
+		needInfo.setOther("other");
 		int insertResult= needInfoMapper.insert(needInfo);
 		return insertResult;
 	}
@@ -40,16 +50,15 @@ public class NeedServiceImpl implements NeedService {
 
 	@Override
 	public Integer updateNeed(NeedInfo needInfo) {
-		/*SchoolWithBLOBs school = schoolMapper.selectByPrimaryKey(schoolWithBLOBs.getId());
-		if (school == null){
+		NeedInfo needInfo1 = needInfoMapper.selectByPrimaryKey(needInfo.getId());
+		if (needInfo1==null){
 			return 0;
 		}
-		int result = schoolMapper.updateByPrimaryKeySelective(schoolWithBLOBs);
+
+		int result = needInfoMapper.updateByPrimaryKeySelective(needInfo);
+
 		return result;
 
-        NeedInfo need =needInfoMapper.selectByPrimaryKey(needInfo.getId());
-        needInfoMapper.updateByExampleSelective(need);*/
-		return 0;
     }
 
 
@@ -62,38 +71,24 @@ public class NeedServiceImpl implements NeedService {
 	}
 
     @Override
-    public NeedInfo queryByName(String needName) {
-        return null;
+    public List<NeedInfo> queryByName(String needName) {
+       NeedInfoExample needInfoExample=new NeedInfoExample();
+       NeedInfoExample.Criteria criteria=needInfoExample.createCriteria();
+       criteria.andNameEqualTo(needName);
+       List<NeedInfo> needInfoList=needInfoMapper.selectByExampleWithBLOBs(needInfoExample);
+
+       if (needInfoList==null)
+	   {
+	   	return  null;
+	   }
+	   return  needInfoList;
     }
 
-//	@Override
-//	public SchoolWithBLOBs queryByName(String schoolName) {
-//
-//		SchoolExample schoolExample = new SchoolExample();
-//		SchoolExample.Criteria criteria = schoolExample.createCriteria();
-//		criteria.andSchoolnameEqualTo(schoolName);
-//
-//		List<SchoolWithBLOBs> schoolWithBLOBsList = schoolMapper.selectByExampleWithBLOBs(schoolExample);
-//
-//		if (schoolWithBLOBsList == null){
-//			return null;
-//		}
-//
-//		return schoolWithBLOBsList.get(0);
-//	}
-//通过城市查询
-//	@Override
-//	public List<SchoolWithBLOBs> queryByCity(String city) {
-//		SchoolExample schoolExample = new SchoolExample();
-//		SchoolExample.Criteria criteria = schoolExample.createCriteria();
-//		criteria.andCityEqualTo(city);
-//
-//		List<SchoolWithBLOBs> schoolWithBLOBsList = schoolMapper.selectByExampleWithBLOBs(schoolExample);
-//
-//		if (schoolWithBLOBsList == null){
-//			return null;
-//		}
+	@Override
+	public NeedInfo queryById(String id) {
+		NeedInfo needInfo = needInfoMapper.selectByPrimaryKey(id);
+		return needInfo;
+	}
 
-//		return schoolWithBLOBsList;
-//	}
+
 }

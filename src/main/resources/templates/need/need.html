@@ -13,18 +13,20 @@
     <div th:replace="common/bar::sidebar"></div>
 
     <div class="layui-body">
-        <!--th:action=""-->
-        <form  class="layui-form">
+<!--//查询功能==========================================================-->
+        <form th:action="@{/need/queryNeed}"class="layui-form">
             <div class="layui-form-item">
                 <div class="layui-inline">
-                    <label class="layui-form-label">需求名称</label>
+                    <label class="layui-form-label">需求检索</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="needName" placeholder="请输入" class="layui-input">
+                        <input type="text"name="name"  placeholder="请输入" class="layui-input">
                     </div>
                 </div>
                 <button type="submit" class="layui-btn layui-btn-normal">查询</button>
-                <a class="layui-btn layui-btn-danger deleteBtn "href="addNeed">
-                    新增</a>
+<!--添加需求==============================================================-->
+                <a class="layui-btn layui-btn-danger" th:href="@{/need/addNeed}">
+                    发布需求</a>
+
             </div>
         </form>
 
@@ -33,12 +35,12 @@
                 <tr>
                     <th>需求id</th>
                     <th>需求名称</th>
-                    <th>发布管理员id</th>
+                    <th>发布者id</th>
                     <th>发布学校id</th>
-                    <th>需求紧急状态</th>
-                    <th>发布信息</th>
+                    <th>紧急状态</th>
+                    <th>发布内容</th>
                     <th>发布时间</th>
-                    <th>最后发布时间</th>
+                    <!--<th>最后修改时间</th>-->
                     <th>操作</th>
                 </tr>
             </thead>
@@ -53,9 +55,9 @@
                     <td th:text="${need.level}"></td>
                     <td th:text="${need.info}"></td>
                     <td th:text="${need.publishtime}"></td>
-                    <td th:text="${need.edittime}"></td>
+                    <!--<td th:text="${need.edittime}"></td>-->
                     <td >
-                        <a class="layui-btn" >编辑</a>
+                        <a class="layui-btn" th:href="@{/need/toUpNeed(id=${need.id})}">编辑</a>
                         <button th:attr="del_uri=@{/need/}+${need.id}" class="layui-btn layui-btn-danger deleteBtn" >删除</button>
                         <a class="layui-btn">查看</a>
                     </td>
@@ -63,10 +65,31 @@
             </tbody>
         </table>
 
+        <nav>
+            <ul>
+                <li class="layui-btn ">
+                    <a th:href="@{/need/need(pageNum=1,pageSize=${pageSize})}">首页</a>
+                </li>
+                <li class="layui-btn" th:if="${currentPage} gt -1">
+                    <a th:href="@{/need/need(pageNum=(${currentPage}-1),pageSize=${pageSize})}">上一页</a>
+                </li>
+                <li class="layui-btn" th:if="${currentPage} lt 1">
+                    <a th:href="@{/need/need(pageNum=1, pageSize=${pageSize})}">上一页</a>
+                </li>
+                <li class="layui-btn" th:if="${currentPage} lt ${pages}">
+                    <a th:href="@{/need/need(pageNum=(${currentPage}+1),pageSize=${pageSize})}">下一页</a>
+                </li>
+                <li class="layui-btn" th:if="${currentPage} ge ${pages}">
+                    <a th:href="@{/need/need(pageNum=${pages}, pageSize=${pageSize})}">下一页</a>
+                </li>
+                <li class="layui-btn">
+                    <a th:href="@{/need/need(pageNum=${pages}, pageSize=${pageSize})}">末页</a>
+                </li>
+            </ul>
+        </nav>
     <form id="deleteNeedFrom" method="post">
         <input type="hidden" name="_method" value="delete">
     </form>
-
     </div>
 
     <div class="layui-footer">

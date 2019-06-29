@@ -1,6 +1,5 @@
 package com.cdtu.support.service;
 
-import com.cdtu.support.pojo.NeedInfo;
 import com.cdtu.support.pojo.Road;
 import com.cdtu.support.pojo.SchoolWithBLOBs;
 
@@ -16,7 +15,9 @@ public interface RoadService {
 
     List<Road> queryAll();
 
-    Road queryByName(String Road);
+    List<Road> queryByName(String Road);
+
+    Road queryById(String id);
 
 //	List<SchoolWithBLOBs> queryByCity(String city);
 //

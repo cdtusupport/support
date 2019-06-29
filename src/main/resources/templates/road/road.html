@@ -14,17 +14,17 @@
 
     <div class="layui-body">
         <!-- 内容主体区域 -->
-        <!--th:action="@{/road/queryByName}"-->
-        <form  class="layui-form">
+
+        <form th:action="@{/road/queryRoad}" class="layui-form">
             <div class="layui-form-item">
                 <div class="layui-inline">
                     <label class="layui-form-label">路线搜索</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="roadName" placeholder="请输入" class="layui-input">
+                        <input type="text" name="name" placeholder="请输入" class="layui-input">
                     </div>
                 </div>
                 <button type="submit" class="layui-btn layui-btn-normal">查询</button>
-                <a class="layui-btn layui-btn-danger deleteBtn"th:href="@{road/addRoad}">添加路线</a>
+                <a class="layui-btn layui-btn-danger " th:href="@{/road/addRoad}">添加路线</a>
     </div>
         </form>
 
@@ -37,7 +37,6 @@
                 <th>发布时间</th>
                 <th>其他</th>
                 <th>操作</th>
-
             </tr>
             </thead>
             <tbody>
@@ -48,7 +47,7 @@
                 <td th:text="${road1.publishtime}"></td>
                 <td th:text="${road1.other}"></td>
                 <td >
-                    <a class="layui-btn" >编辑</a>
+                    <a class="layui-btn" th:href="@{/road/toUpRoad(id=${road1.id})}">编辑</a>
                     <button th:attr="del_uri=@{/road/}+${road1.id}" class="layui-btn layui-btn-danger deleteBtn" >删除</button>
                     <a class="layui-btn">查看</a>
                 </td>

@@ -1,7 +1,6 @@
 package com.cdtu.support.service;
 
 import com.cdtu.support.pojo.NeedInfo;
-import com.cdtu.support.pojo.SchoolWithBLOBs;
 
 import java.util.List;
 
@@ -15,7 +14,9 @@ public interface NeedService {
 
 	List<NeedInfo> queryAll();
 
-	NeedInfo queryByName(String needName);
+	List<NeedInfo> queryByName(String needName);
+
+	NeedInfo queryById(String id);
 
 //	List<SchoolWithBLOBs> queryByCity(String city);
 //
