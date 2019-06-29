@@ -1,17 +1,28 @@
 package com.cdtu.support.controller;
 
+import com.cdtu.support.pojo.User;
+import com.cdtu.support.service.UserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
+import org.apache.shiro.web.session.HttpServletSession;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import java.util.List;
+
 @Controller
 public class LoginController {
+
+	@Autowired
+	UserService userService;
 
 	@GetMapping("/toLogin")
 	public String toLogin(){
@@ -19,7 +30,11 @@ public class LoginController {
 	}
 
 	@PostMapping("/login")
-	public String login(String username, String password, Model model){
+	public String login(String username,
+	                    String password,
+	                    Model model,
+	                    HttpServletRequest httpServletRequest
+	                    ){
 
 		//1、获取subject
 		Subject subject = SecurityUtils.getSubject();
@@ -29,11 +44,14 @@ public class LoginController {
 		usernamePasswordToken.setUsername(username.trim());
 		usernamePasswordToken.setPassword(password.trim().toCharArray());
 
-		//3、执行登录方法
+		List<User> userList = userService.queryByName(username.trim());
 
+		//3、执行登录方法
 
 		try {
 			subject.login(usernamePasswordToken);
+			httpServletRequest.getSession().setAttribute("userId", userList.get(0).getId());
+			httpServletRequest.getSession().setAttribute("username", userList.get(0).getUsername());
 			return "redirect:/index";
 		} catch (UnknownAccountException e) {
 			model.addAttribute("message", "用户名不存在");

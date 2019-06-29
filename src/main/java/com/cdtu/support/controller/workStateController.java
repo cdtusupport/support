@@ -2,6 +2,7 @@ package com.cdtu.support.controller;
 
 
 import com.cdtu.support.pojo.WorkState;
+import com.cdtu.support.service.UserService;
 import com.cdtu.support.service.workStateService;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
@@ -26,6 +27,8 @@ public class workStateController {
 
     @Autowired
     workStateService workstateService;
+    @Autowired
+    UserService userService;
 
     /**
      * 显示文件上传页
@@ -65,19 +68,19 @@ public class workStateController {
     @PostMapping("/workState/addworkState")
     public String addworkState(WorkState workState) {
         workstateService.deleteByPrimaryKey(workState.getId());
-        workState.setId(UUID.randomUUID().toString().substring(0,5));
+
+        System.out.println(workState.getUserid());
+        workState.setId(UUID.randomUUID().toString().substring(0, 5));
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
         workState.setPublictime(df.format(new Date()));
         workstateService.addWorkState(workState);
-        System.out.println(workState.toString());
-        System.out.println("到达2");
         return "redirect:/workState/workStateList";
     }
 
     @GetMapping("/workState/alterworkStatePage")
-    public String alterworkStatePage(String id,Map<String, Object> model) {
-        WorkState workState= workstateService.queryById(id);
-        model.put("workState",workState);
+    public String alterworkStatePage(String id, Map<String, Object> model) {
+        WorkState workState = workstateService.queryById(id);
+        model.put("workState", workState);
         return "workstate/alterWorkState";
     }
 
@@ -93,7 +96,16 @@ public class workStateController {
                                 Map<String, Object> model) {
         Page<Object> page = PageHelper.startPage(pageNum, pageSize);
         List<WorkState> workStateList = workstateService.queryAll();
-        ;
+        for (WorkState workState : workStateList) {
+            if (workState.getUserid() == null) {
+                continue;
+            } else {
+                if (userService.queryById(workState.getUserid()).getUsername() == null) {
+                    continue;
+                } else
+                    workState.setUserid(userService.queryById(workState.getUserid()).getUsername());
+            }
+        }
         model.put("workStateList", workStateList);
         model.put("currentPage", pageNum);
         model.put("pages", page.getPages());
