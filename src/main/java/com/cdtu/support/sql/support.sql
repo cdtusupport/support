@@ -122,3 +122,36 @@ CREATE TABLE recruitInfo(
   PRIMARY KEY (id)
 );
 
+DROP TABLE IF EXISTS permission;
+
+CREATE TABLE permission(
+  id  INT(11) AUTO_INCREMENT,
+  name  VARCHAR(32) NOT NULL ,
+  PRIMARY KEY (id)
+);
+
+DROP TABLE IF EXISTS role;
+
+CREATE TABLE role(
+  id  INT(11) AUTO_INCREMENT,
+  name  VARCHAR(32) NOT NULL ,
+  PRIMARY KEY (id)
+);
+
+DROP TABLE IF EXISTS role_permission;
+
+CREATE TABLE role_permission(
+  id  INT(11) AUTO_INCREMENT,
+  role_id INT(11) NOT NULL ,
+  permission_id INT(11) NOT NULL ,
+  PRIMARY KEY (id),
+  CONSTRAINT fk_role_id FOREIGN KEY (role_id) REFERENCES role(id),
+  CONSTRAINT fk_permission_id FOREIGN KEY (permission_id) REFERENCES permission(id)
+);
+
+
+
+
+
+
+
