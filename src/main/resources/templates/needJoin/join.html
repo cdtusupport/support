@@ -21,7 +21,7 @@
                 <div class="layui-input-block">
                     <select name="inNeedId"  >
                         <option value=""></option>
-                        <option th:value="${needInfo.id}" th:text="${needInfo.name}" th:each="needInfo:${needInfoList}">
+                        <option th:each="needInfo:${needInfoList}" th:value="${needInfo.id}" th:text="${needInfo.name}" >
                         </option>
                     </select>
                 </div>
@@ -46,7 +46,7 @@
                 <div class="layui-input-block">
                     <select name="schoolName" lay-verify="required">
                         <option value=""></option>
-                        <option th:value="${school.schoolname}" th:text="${school.schoolname}" th:each="school:${schoolList}"></option>
+                        <option th:each="school:${schoolList}" th:value="${school.schoolname}" th:text="${school.schoolname}" ></option>
                     </select>
                 </div>
             </div>

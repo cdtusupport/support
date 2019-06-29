@@ -20,7 +20,7 @@
 
             <div class="layui-form-item">
                 <label class="layui-form-label">招聘标题</label>
-                <div class="layui-input-block">
+                <div class="layui-input-inline">
                     <input type="text" name="name" th:value="${recruitInfo.name}" required  lay-verify="required"  autocomplete="off" class="layui-input">
                 </div>
             </div>
@@ -28,7 +28,7 @@
 
             <div class="layui-form-item layui-form-text">
                 <label class="layui-form-label">招聘内容</label>
-                <div class="layui-input-block">
+                <div class="layui-input-inline">
                     <textarea name="content" th:value="${recruitInfo.content}" th:text="${recruitInfo.content}" class="layui-textarea"></textarea>
                 </div>
             </div>

@@ -1,346 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="398c1338-6a8d-4305-a0fe-b75b6efb2d89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/ueditor_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/workStateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/workStateServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/workStateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/less/animated.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/less/core.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/less/icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/less/larger.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/less/list.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/less/path.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/less/variables.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/images/avatar-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/images/img-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/zh-cn/zh-cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/workstate/addWorkState.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/workstate/alterWorkState.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/workstate/workStateList.html" afterDir="false" />
+    <list default="true" id="398c1338-6a8d-4305-a0fe-b75b6efb2d89" name="Default Changelist" comment="2019 6月27晚23：19 吴洋">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/NeedController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/NeedJoinController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/RecruitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/RoadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/NeedJoinService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/NeedService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/RecruitService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/RoadService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/NeedJoinServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/NeedServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/RecruitServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/RoadServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/util/SupportUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/User/alterUserPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/need/addNeed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/need/need.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/needJoin/join.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/recruit/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/recruit/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/recruit/query.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/recruit/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/road/addRoad.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/road/road.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/school/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/school/query.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/school/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/support_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/support_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/UploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/SchoolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/SchoolController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/anchor/anchor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/anchor/anchor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/attachment.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/attachment.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/attachment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/attachment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/attachment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/attachment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/fileTypeImages/icon_chm.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/fileTypeImages/icon_default.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/fileTypeImages/icon_default.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/fileTypeImages/icon_doc.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/fileTypeImages/icon_exe.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/fileTypeImages/icon_jpg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/fileTypeImages/icon_mp3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/fileTypeImages/icon_mv.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/fileTypeImages/icon_pdf.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/fileTypeImages/icon_ppt.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/fileTypeImages/icon_psd.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/fileTypeImages/icon_rar.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/fileTypeImages/icon_txt.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/fileTypeImages/icon_xls.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/images/alignicon.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/images/alignicon.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/images/alignicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/images/alignicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/images/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/images/bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/images/file-icons.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/images/file-icons.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/images/file-icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/images/file-icons.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/images/icons.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/images/icons.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/images/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/images/icons.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/images/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/images/image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/images/progress.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/images/progress.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/images/success.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/images/success.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/attachment/images/success.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/attachment/images/success.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/background/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/background/background.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/background/background.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/background/background.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/background/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/background/background.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/background/images/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/background/images/bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/background/images/success.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/background/images/success.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/charts/chart.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/charts/chart.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/charts/charts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/charts/charts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/charts/charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/charts/charts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/charts/charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/charts/charts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/charts/images/charts0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/charts/images/charts0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/charts/images/charts1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/charts/images/charts1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/charts/images/charts2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/charts/images/charts2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/charts/images/charts3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/charts/images/charts3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/charts/images/charts4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/charts/images/charts4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/charts/images/charts5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/charts/images/charts5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/emotion/emotion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/emotion/emotion.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/emotion/emotion.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/emotion/emotion.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/emotion/emotion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/emotion/emotion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/emotion/images/0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/emotion/images/0.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/emotion/images/bface.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/emotion/images/bface.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/emotion/images/cface.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/emotion/images/cface.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/emotion/images/fface.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/emotion/images/fface.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/emotion/images/jxface2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/emotion/images/jxface2.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/emotion/images/neweditor-tab-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/emotion/images/tface.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/emotion/images/tface.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/emotion/images/wface.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/emotion/images/wface.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/emotion/images/yface.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/emotion/images/yface.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/gmap/gmap.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/gmap/gmap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/help/help.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/help/help.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/help/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/help/help.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/help/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/help/help.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/image/image.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/image/image.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/image/image.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/image/image.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/image/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/image/image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/image/images/alignicon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/image/images/alignicon.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/image/images/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/image/images/bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/image/images/icons.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/image/images/icons.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/image/images/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/image/images/icons.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/image/images/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/image/images/image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/image/images/progress.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/image/images/progress.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/image/images/success.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/image/images/success.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/image/images/success.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/image/images/success.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/insertframe/insertframe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/internal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/link/link.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/link/link.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/map/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/map/map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/map/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/map/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/music/music.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/music/music.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/music/music.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/music/music.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/music/music.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/music/music.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/preview/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/preview/preview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/scrawl/images/addimg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/scrawl/images/addimg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/scrawl/images/brush.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/scrawl/images/brush.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/scrawl/images/delimg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/scrawl/images/delimg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/scrawl/images/delimgH.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/scrawl/images/delimgH.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/scrawl/images/empty.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/scrawl/images/empty.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/scrawl/images/emptyH.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/scrawl/images/emptyH.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/scrawl/images/eraser.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/scrawl/images/eraser.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/scrawl/images/redo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/scrawl/images/redo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/scrawl/images/redoH.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/scrawl/images/redoH.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/scrawl/images/scale.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/scrawl/images/scale.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/scrawl/images/scaleH.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/scrawl/images/scaleH.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/scrawl/images/size.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/scrawl/images/size.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/scrawl/images/undo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/scrawl/images/undo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/scrawl/images/undoH.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/scrawl/images/undoH.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/scrawl/scrawl.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/scrawl/scrawl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/scrawl/scrawl.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/scrawl/scrawl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/scrawl/scrawl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/scrawl/scrawl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/searchreplace/searchreplace.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/searchreplace/searchreplace.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/searchreplace/searchreplace.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/searchreplace/searchreplace.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/snapscreen/snapscreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/snapscreen/snapscreen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/spechars/spechars.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/spechars/spechars.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/spechars/spechars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/spechars/spechars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/table/dragicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/table/dragicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/table/edittable.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/table/edittable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/table/edittable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/table/edittable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/table/edittable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/table/edittable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/table/edittd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/table/edittd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/table/edittip.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/table/edittip.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/template/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/template/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/template/images/bg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/template/images/bg.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/template/images/pre0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/template/images/pre0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/template/images/pre1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/template/images/pre1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/template/images/pre2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/template/images/pre2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/template/images/pre3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/template/images/pre3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/template/images/pre4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/template/images/pre4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/template/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/template/template.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/template/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/template/template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/template/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/template/template.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/video/images/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/video/images/bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/video/images/center_focus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/video/images/center_focus.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/video/images/file-icons.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/video/images/file-icons.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/video/images/file-icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/video/images/file-icons.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/video/images/icons.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/video/images/icons.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/video/images/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/video/images/icons.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/video/images/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/video/images/image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/video/images/left_focus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/video/images/left_focus.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/video/images/none_focus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/video/images/none_focus.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/video/images/progress.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/video/images/progress.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/video/images/right_focus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/video/images/right_focus.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/video/images/success.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/video/images/success.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/video/images/success.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/video/images/success.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/video/video.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/video/video.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/video/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/video/video.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/video/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/video/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/webapp/webapp.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/webapp/webapp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/wordimage/fClipboard_ueditor.swf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/wordimage/imageUploader.swf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/wordimage/imageUploader.swf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/wordimage/tangram.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/wordimage/tangram.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/wordimage/wordimage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/wordimage/wordimage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/dialogs/wordimage/wordimage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/dialogs/wordimage/wordimage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/jsp/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/jsp/controller.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/jsp/controller.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/jsp/lib/commons-codec-1.9.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/jsp/lib/commons-codec-1.9.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/jsp/lib/commons-fileupload-1.3.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/jsp/lib/commons-fileupload-1.3.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/jsp/lib/commons-io-2.4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/jsp/lib/commons-io-2.4.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/jsp/lib/json.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/jsp/lib/json.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/jsp/lib/ueditor-1.1.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/jsp/lib/ueditor-1.1.2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/en/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/en/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/en/images/addimage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/en/images/addimage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/en/images/alldeletebtnhoverskin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/en/images/alldeletebtnhoverskin.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/en/images/alldeletebtnupskin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/en/images/alldeletebtnupskin.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/en/images/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/en/images/background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/en/images/button.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/en/images/button.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/en/images/copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/en/images/copy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/en/images/deletedisable.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/en/images/deletedisable.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/en/images/deleteenable.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/en/images/deleteenable.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/en/images/listbackground.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/en/images/listbackground.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/en/images/localimage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/en/images/localimage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/en/images/music.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/en/images/music.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/en/images/rotateleftdisable.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/en/images/rotateleftdisable.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/en/images/rotateleftenable.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/en/images/rotateleftenable.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/en/images/rotaterightdisable.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/en/images/rotaterightdisable.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/en/images/rotaterightenable.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/en/images/rotaterightenable.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/en/images/upload.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/en/images/upload.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/zh-cn/images/copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/zh-cn/images/copy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/zh-cn/images/localimage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/zh-cn/images/localimage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/zh-cn/images/music.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/zh-cn/images/music.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/zh-cn/images/upload.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/zh-cn/images/upload.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/lang/zh-cn/zh-cn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/css/ueditor.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/css/ueditor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/css/ueditor.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/css/ueditor.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/dialogbase.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/dialogbase.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/anchor.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/anchor.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/arrow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/arrow_down.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/arrow_down.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/arrow_up.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/arrow_up.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/button-bg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/button-bg.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/cancelbutton.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/cancelbutton.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/charts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/charts.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/cursor_h.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/cursor_h.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/cursor_h.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/cursor_h.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/cursor_v.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/cursor_v.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/cursor_v.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/cursor_v.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/dialog-title-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/dialog-title-bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/filescan.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/filescan.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/highlighted.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/highlighted.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/icons-all.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/icons-all.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/icons.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/icons.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/icons.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/loaderror.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/loaderror.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/loading.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/lock.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/lock.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/neweditor-tab-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/neweditor-tab-bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/pagebreak.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/pagebreak.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/scale.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/scale.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/sortable.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/sortable.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/spacer.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/spacer.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/sparator_v.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/sparator_v.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/table-cell-align.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/table-cell-align.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/tangram-colorpicker.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/tangram-colorpicker.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/toolbar_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/toolbar_bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/unhighlighted.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/unhighlighted.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/upload.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/upload.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/videologo.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/videologo.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/word.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/word.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/default/images/wordpaste.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/default/images/wordpaste.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/themes/iframe.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/themes/iframe.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/SyntaxHighlighter/shCore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/SyntaxHighlighter/shCore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/SyntaxHighlighter/shCoreDefault.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/codemirror/codemirror.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/codemirror/codemirror.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/codemirror/codemirror.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/codemirror/codemirror.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/adapters/mootools-adapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/adapters/mootools-adapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/adapters/mootools-adapter.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/adapters/prototype-adapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/adapters/prototype-adapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/adapters/prototype-adapter.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/adapters/standalone-framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/adapters/standalone-framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/adapters/standalone-framework.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/highcharts-more.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/highcharts-more.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/highcharts-more.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/highcharts-more.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/highcharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/highcharts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/highcharts.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/highcharts.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/modules/annotations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/modules/annotations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/modules/annotations.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/modules/annotations.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/modules/canvas-tools.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/modules/canvas-tools.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/modules/canvas-tools.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/modules/canvas-tools.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/modules/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/modules/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/modules/data.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/modules/data.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/modules/drilldown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/modules/drilldown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/modules/drilldown.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/modules/drilldown.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/modules/exporting.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/modules/exporting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/modules/exporting.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/modules/exporting.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/modules/funnel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/modules/funnel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/modules/funnel.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/modules/funnel.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/modules/heatmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/modules/heatmap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/modules/heatmap.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/modules/heatmap.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/modules/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/modules/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/modules/map.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/modules/map.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/modules/no-data-to-display.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/modules/no-data-to-display.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/modules/no-data-to-display.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/themes/dark-blue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/themes/dark-blue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/themes/dark-green.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/themes/dark-green.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/themes/gray.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/themes/gray.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/themes/grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/themes/grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/highcharts/themes/skies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/highcharts/themes/skies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/jquery-1.10.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/jquery-1.10.2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/jquery-1.10.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/jquery-1.10.2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/jquery-1.10.2.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/jquery-1.10.2.min.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/snapscreen/UEditorSnapscreen.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/video-js/font/vjs.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/video-js/font/vjs.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/video-js/font/vjs.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/video-js/font/vjs.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/video-js/font/vjs.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/video-js/font/vjs.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/video-js/font/vjs.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/video-js/font/vjs.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/video-js/video-js.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/video-js/video-js.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/video-js/video-js.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/video-js/video-js.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/video-js/video-js.swf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/video-js/video-js.swf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/video-js/video.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/video-js/video.dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/video-js/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/video-js/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/webuploader/Uploader.swf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/webuploader/Uploader.swf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/webuploader/webuploader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/webuploader/webuploader.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/webuploader/webuploader.custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/webuploader/webuploader.custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/webuploader/webuploader.custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/webuploader/webuploader.custom.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/webuploader/webuploader.flashonly.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/webuploader/webuploader.flashonly.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/webuploader/webuploader.flashonly.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/webuploader/webuploader.flashonly.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/webuploader/webuploader.html5only.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/webuploader/webuploader.html5only.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/webuploader/webuploader.html5only.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/webuploader/webuploader.html5only.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/webuploader/webuploader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/webuploader/webuploader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/webuploader/webuploader.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/webuploader/webuploader.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/webuploader/webuploader.withoutimage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/webuploader/webuploader.withoutimage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/webuploader/webuploader.withoutimage.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/xss.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/xss.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/zeroclipboard/ZeroClipboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/zeroclipboard/ZeroClipboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/zeroclipboard/ZeroClipboard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/third-party/zeroclipboard/ZeroClipboard.swf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/ueditor.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/ueditor.all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/ueditor.all.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/ueditor.all.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/ueditor.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/ueditor.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/ueditor.parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/ueditor.parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/utf8-jsp/ueditor.parse.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/ueditor.parse.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/SchoolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/SchoolService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/PolicyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/PolicyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/SchoolServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/SchoolServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/User/UserList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/User/UserList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/User/addUserPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/User/addUserPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/bar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/policy/uploadPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/policy/uploadPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/school/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/school/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cdtu/support/mapper/SchoolMapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cdtu/support/service/impl/SchoolServiceImplTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/support.iml" beforeDir="false" afterPath="$PROJECT_DIR$/support.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cdtu/support/controller/SchoolController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cdtu/support/controller/SchoolController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cdtu/support/service/SchoolService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cdtu/support/service/SchoolService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cdtu/support/service/impl/SchoolServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cdtu/support/service/impl/SchoolServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/common/bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/common/bar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/school/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/school/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cdtu/support/mapper/SchoolMapperTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cdtu/support/service/impl/SchoolServiceImplTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -368,106 +83,13 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workstate/alterWorkState.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="21" column="90" selection-start-line="21" selection-start-column="90" selection-end-line="21" selection-end-column="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="1" column="42" lean-forward="true" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/login/js/main.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/school/update.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/SchoolServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2052">
-              <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/workStateServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1476">
-              <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/alterUserPage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="15" column="94" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="94" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/NeedJoinServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/pojo/WorkState.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
         <option value="Class" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -482,10 +104,6 @@
       <find>all</find>
       <find>formDemo</find>
       <find>uu</find>
-      <find>selectByName</find>
-      <find>de</find>
-      <find>id</find>
-      <find>addWorkStatePage</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -509,9 +127,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/mapper/PolicyMapper.java" />
         <option value="D:/学习/CDTU_SSM_Demo/src/main/webapp/WEB-INF/views/teacher/courseList.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/PolicyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/UploadController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/workstate/workStatList.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/workstate/workstateAdd.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/workstate/workStatAdd.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/common/bar.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/policy/uploadPage.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/SchoolController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/SchoolServiceImpl.java" />
@@ -521,27 +143,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/PolicyServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/User/alterUserPage.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/User/addUserPage.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/User/UserList.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/UploadController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/policy/uploadPage.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/workstate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/workstateImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/ueditor/ueditor.config.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/ueditor/lang/zh-cn/zh-cn.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/workState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/workStateImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/workState.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/common/bar.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/workstate/workStateList.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/workStateService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/workStateServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/workstate/alterWorkState.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/workStateController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/workstate/addWorkState.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/login/login.html" />
       </list>
     </option>
   </component>
@@ -553,8 +157,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="621" />
-    <option name="y" value="58" />
+    <option name="x" value="155" />
+    <option name="y" value="193" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -564,7 +168,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -581,79 +184,6 @@
               <item name="support" type="b2602c69:ProjectViewProjectNode" />
               <item name="support" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="support" type="b2602c69:ProjectViewProjectNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="support" type="b2602c69:ProjectViewProjectNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="support" type="b2602c69:ProjectViewProjectNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="support" type="b2602c69:ProjectViewProjectNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="support" type="b2602c69:ProjectViewProjectNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="support" type="b2602c69:ProjectViewProjectNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="support" type="b2602c69:ProjectViewProjectNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="support" type="b2602c69:ProjectViewProjectNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="support" type="b2602c69:ProjectViewProjectNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -661,15 +191,32 @@
               <item name="support" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="support" type="b2602c69:ProjectViewProjectNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="support" type="b2602c69:ProjectViewProjectNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="support" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="module" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -677,33 +224,29 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/login" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/cdtu/support" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.5137931" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static\login" />
-      <recent name="C:\Users\asus\IdeaProjects\support\src\main\java\com\cdtu\support\service\impl" />
       <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static" />
       <recent name="C:\Users\asus\IdeaProjects\support" />
       <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static\login" />
-      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static\login\images\css" />
-      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static" />
-      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\templates\workstate" />
-      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static\ueditor\lang\zh-cn" />
+      <recent name="C:\Users\asus\IdeaProjects\support\src\main\java\com\cdtu\support" />
+      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\templates" />
+      <recent name="C:\Users\asus\IdeaProjects\support\src\main\java\com\cdtu\support\service\impl" />
+      <recent name="C:\Users\asus\IdeaProjects\support\src\main\java\com\cdtu\support\service" />
+      <recent name="C:\Users\asus\IdeaProjects\support\src\main\java\com\cdtu\support\generator" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.cdtu.support.service" />
-      <recent name="com.cdtu.support.service.impl" />
       <recent name="com.cdtu.support.controller" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
@@ -774,9 +317,7 @@
       <workItem from="1561642188624" duration="1587000" />
       <workItem from="1561648640014" duration="830000" />
       <workItem from="1561686854003" duration="11097000" />
-      <workItem from="1561704126508" duration="10125000" />
-      <workItem from="1561716603398" duration="9433000" />
-      <workItem from="1561788042419" duration="1021000" />
+      <workItem from="1561704126508" duration="2185000" />
     </task>
     <task id="LOCAL-00001" summary="ceshi">
       <created>1561530394230</created>
@@ -834,31 +375,16 @@
       <option name="project" value="LOCAL" />
       <updated>1561648823697</updated>
     </task>
-    <task id="LOCAL-00009" summary="6 28 15:22 吴洋">
-      <created>1561706594633</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1561706594633</updated>
-    </task>
-    <task id="LOCAL-00010" summary="6 28 15:22 吴洋">
-      <created>1561707007844</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1561707007844</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70851000" />
+    <option name="totallyTimeSpent" value="52457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19722815" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.40458423" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -867,8 +393,8 @@
       <window_info id="Web" order="6" side_tool="true" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.03253796" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.86886996" weight="0.7754881" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.86886996" visible="true" weight="0.35683298" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8614072" weight="0.64425164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -880,7 +406,7 @@
       <window_info anchor="bottom" id="Database Changes" order="11" sideWeight="0.49946696" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4989339" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.4989339" weight="0.3340564" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.4989339" weight="0.20065077" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -950,9 +476,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ceshi" />
     <MESSAGE value="2019 6月27晚23：19 吴洋" />
-    <MESSAGE value="6 28 15:22 吴洋" />
-    <MESSAGE value="6 29 14:12 吴洋" />
-    <option name="LAST_COMMIT_MESSAGE" value="6 29 14:12 吴洋" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019 6月27晚23：19 吴洋" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/UserController.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/support$SupportApplication.ic" NAME="SupportApplication Coverage Results" MODIFIED="1561623295641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -960,6 +496,239 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workstate/list.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workstate/uploadPage.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/umeditor/jsp/imageUp.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/umeditor/jsp/getContent.jsp" />
+    <entry file="file://$PROJECT_DIR$/target/classes/static/umeditor/jsp/imageUp.jsp" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms2.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="399" column="30" lean-forward="true" selection-start-line="399" selection-start-column="30" selection-end-line="399" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/utf8-jsp/jsp/controller.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-39" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/utf8-jsp/jsp/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-864" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workstate/workstateAdd.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/utf8-jsp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#script#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workstate/workStatAdd.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workstate/workStatList.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/SystemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/UserList - 副本.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/pojo/UserWithBLOBs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-646">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/pojo/SchoolWithBLOBs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/pojo/SchoolExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="77" column="37" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/pojo/UserExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6156">
+          <caret line="192" column="25" selection-start-line="192" selection-start-column="25" selection-end-line="192" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/mapper/SchoolMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/school/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-317">
+          <caret line="61" column="44" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="570" column="22" selection-start-line="570" selection-start-column="22" selection-end-line="570" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/qq保存文件/783744175/FileRecv/SchoolController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://F:/qq保存文件/783744175/FileRecv/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="16" column="69" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/SchoolController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1321">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/SchoolService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/PolicyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/addUserPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3168">
+          <caret line="88" column="60" selection-start-line="88" selection-start-column="60" selection-end-line="88" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/SchoolServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2088">
+          <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/policy/uploadPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="1" column="46" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/alterUserPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3204">
+          <caret line="89" column="60" selection-start-line="89" selection-start-column="60" selection-end-line="89" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/UserList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/SupportApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="15" selection-start-line="15" selection-end-line="17" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="103" column="5" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/config/MyBatisConfig.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/PermissionController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -973,147 +742,17 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/NeedJoinService.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/util/SupportUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cdtu/support/service/impl/SchoolServiceImplTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/school/query.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3132" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/school/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="85" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/utf8-jsp/ueditor.all.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/utf8-jsp/ueditor.config.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/utf8-jsp/ueditor.parse.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/utf8-jsp/jsp/controller.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/utf8-jsp/jsp/config.json" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/ueditor/jsp/controller.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/ueditor/jsp/config.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/addUserPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/ueditor/lang/zh-cn/zh-cn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24084">
-          <caret line="669" selection-start-line="669" selection-end-line="669" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/ueditor/ueditor.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/policy/uploadPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/ueditor/ueditor.parse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/ueditor/ueditor.all.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/UserList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2376">
-          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="88" selection-end-column="22" />
-          <folding>
-            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/workState.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/workStateImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/workState.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.6.RELEASE/spring-boot-autoconfigure-2.1.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="466" column="44" selection-start-line="466" selection-start-column="44" selection-end-line="466" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/SupportApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/bar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="64" column="17" lean-forward="true" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/SchoolController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1114">
-          <caret line="85" column="27" selection-start-line="32" selection-start-column="8" selection-end-line="34" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/RoadServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/PolicyServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
@@ -1124,140 +763,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workstate/workStateList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="44" column="75" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="75" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="53" column="7" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1032">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/workStateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="79" column="41" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#selectByName#0;class#workStateController#0" />
-            <element signature="method#workStateList#0;class#workStateController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/workStateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workstate/addWorkState.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="21" column="71" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/school/update.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/SchoolServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/workStateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1476">
-          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/alterUserPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="15" column="94" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="94" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/service/impl/NeedJoinServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
+        <state relative-caret-position="324">
           <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/pojo/WorkState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workstate/alterWorkState.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="21" column="90" selection-start-line="21" selection-start-column="90" selection-end-line="21" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/login/images/css/util.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/util/SupportUtil.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/login/js/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="1" column="42" lean-forward="true" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+        <state relative-caret-position="215">
+          <caret line="63" column="55" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="55" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/bar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/cdtu/support/service/impl/SchoolServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="60" column="67" selection-start-line="60" selection-start-column="67" selection-end-line="60" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -1322,11 +858,10 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>ueditor-1.1.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.5137931" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>

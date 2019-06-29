@@ -14,7 +14,7 @@ public class MybatisGenerator {
     public static void main(String[] args) throws Exception{
         List<String> warnings = new ArrayList<String>();
         boolean overwrite = true;
-        File configFile = new File("E:\\workspace\\idea\\support\\src\\main\\java\\com\\cdtu\\support\\generator\\mybatis-generator.xml");
+        File configFile = new File("E:\\workspace\\idea\\project\\support\\src\\main\\java\\com\\cdtu\\support\\generator\\mybatis-generator.xml");
         ConfigurationParser cp = new ConfigurationParser(warnings);
         Configuration config = cp.parseConfiguration(configFile);
         DefaultShellCallback callback = new DefaultShellCallback(overwrite);

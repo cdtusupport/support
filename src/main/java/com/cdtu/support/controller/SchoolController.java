@@ -39,7 +39,9 @@ public class SchoolController {
 
 	@GetMapping("school/queryByName")
 	public String queryByName(@RequestParam("schoolName") String schoolName,
-	                          Map<String, Object> model) {
+	                          Map<String, Object> model,
+	                          @RequestParam("pageSize") Integer pageSize,
+	                          @RequestParam("pageNum") Integer pageNum) {
 
 		if (StringUtils.isEmpty(schoolName.trim())) {
 			return "redirect:/school/list";
@@ -51,7 +53,8 @@ public class SchoolController {
 		if (schoolList == null) {
 			return "redirect:/school/list";
 		}
-
+		model.put("pageNum", pageNum);
+		model.put("pageSize", pageSize);
 		model.put("school", schoolList.get(0));
 		System.out.println(schoolList);
 
