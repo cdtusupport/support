@@ -4,6 +4,7 @@ import com.cdtu.support.pojo.RecruitInfo;
 import com.cdtu.support.service.RecruitService;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
@@ -14,6 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
+@RequiresPermissions("recruit")
 public class RecruitController {
 
 	@Autowired

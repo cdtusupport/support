@@ -6,6 +6,8 @@ import com.cdtu.support.service.UserService;
 import com.cdtu.support.service.workStateService;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
@@ -23,6 +25,7 @@ import java.util.UUID;
  * 文件上传及进度测试
  */
 @Controller
+@RequiresPermissions("work")
 public class workStateController {
 
     @Autowired

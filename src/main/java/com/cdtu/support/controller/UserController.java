@@ -2,13 +2,13 @@ package com.cdtu.support.controller;
 
 
 
-import com.cdtu.support.pojo.School;
 import com.cdtu.support.pojo.SchoolWithBLOBs;
 import com.cdtu.support.pojo.User;
 import com.cdtu.support.service.SchoolService;
 import com.cdtu.support.service.UserService;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
@@ -21,6 +21,7 @@ import java.util.*;
  * 文件上传及进度测试
  */
 @Controller
+@RequiresRoles("super")
 public class UserController {
 
     @Autowired

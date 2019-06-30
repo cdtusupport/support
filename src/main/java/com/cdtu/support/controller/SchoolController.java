@@ -4,6 +4,7 @@ import com.cdtu.support.pojo.SchoolWithBLOBs;
 import com.cdtu.support.service.SchoolService;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
@@ -14,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-
+@RequiresRoles("super")
 public class SchoolController {
 	@Autowired
 	SchoolService schoolService;

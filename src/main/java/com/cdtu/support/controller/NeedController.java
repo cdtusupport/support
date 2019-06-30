@@ -6,6 +6,7 @@ import com.cdtu.support.pojo.SchoolWithBLOBs;
 import com.cdtu.support.service.NeedService;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
@@ -15,6 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
+@RequiresPermissions("need")
 public class NeedController {
     @Autowired
     NeedService needService;

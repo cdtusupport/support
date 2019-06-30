@@ -6,6 +6,7 @@ import com.cdtu.support.service.PolicyService;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.apache.ibatis.jdbc.Null;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.ResourceUtils;
@@ -25,7 +26,8 @@ import java.util.*;
  * 文件上传及进度测试
  */
 @Controller
-public class UploadController {
+@RequiresPermissions("policy")
+public class PolicyController {
 
     @Autowired
     PolicyService policyService;
