@@ -1,5 +1,6 @@
 package com.cdtu.support.service.impl;
 
+import com.cdtu.support.pojo.Permission;
 import com.cdtu.support.pojo.Role;
 import com.cdtu.support.service.PermissionService;
 import org.junit.Test;
@@ -24,5 +25,12 @@ public class PermissionServiceImplTest {
 		for (Role role : roleList) {
 			System.out.println(role);
 		}
+	}
+
+	@Test
+	public void queryAllPermission() {
+
+		List<Permission> permissions = permissionService.queryAllPermission();
+		System.out.println(permissions.size());
 	}
 }

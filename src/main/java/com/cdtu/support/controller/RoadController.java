@@ -7,6 +7,7 @@ import com.cdtu.support.service.NeedService;
 import com.cdtu.support.service.RoadService;
 import com.github.pagehelper.PageHelper;
 import jdk.nashorn.internal.ir.RuntimeNode;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
@@ -17,6 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
+@RequiresPermissions("road")
 public class RoadController {
     @Autowired
     RoadService roadService;
