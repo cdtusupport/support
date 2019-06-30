@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <base href="<%=basePath %>">
+        <meta charset="UTF-8">
+        <title>西藏援藏系统</title>
+        <link rel="stylesheet" href="../../static/index/css/aidTibetJob.css">
+        <link rel="stylesheet" href="../../static/index/css/public.css">
+        <script src="../../static/layui/layui.all.js"></script>
+    </head>
+    <body>
+        <!--页头-->
+        <header>
+            <div class="content">
+                <!--logo-->
+                <img src="../../static/index/image/logo.png" alt="" class="logo">
+                <!--导航-->
+                <ul class="navLink">
+                    <li><a href="/indexShowPage">首页</a></li>
+                    <li><a href="/indexShowPage">援藏工作</a></li>
+                    <li><a href="/showPolicyPage">援藏政策</a></li>
+                    <li><a href="/showNeedPage">援藏需求</a></li>
+                    <li><a href="/showRoadPage">援藏路径</a></li>
+                    <li><a href="/showSchoolPage">援藏高校</a></li>
+                    <li><a href="/showWorkStatePage">工作动态</a></li>
+                    <li><a href="/showRecruitPage">人员招聘</a></li>
+                </ul>
+                <!--登陆-->
+                <a href="/toLogin" class="login">登陆</a>
+            </div>
+        </header>
+        <!--内容-->
+        <div class="banner content">
+            <img src="../../static/index/image/twoPage_03.png" alt="">
+        </div>
+        <!--        文本-->
+        <div class="content">
+            <div class="inForBox">
+                <div class="inForBox01">
+                    <ul class="pageMain" th:each="school:${schools}">
+                        <li>
+                            <a title="点击查看详情" th:onclick="followForum([[${school.id}]],[[${school.schoolname}]],
+                            [[${school.city}]],[[${school.info}]],[[${school.isgo}]],[[${school.isneed}]],
+                            [[${school.history}]],[[${school.createtime}]],this);">
+                                <span th:text="${school.schoolname}"></span>
+                                <span th:text="${school.createtime}"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="pageBox">
+                        <li>
+                            <a th:href="@{/showSchoolPage(pageNum=1,pageSize=${pageSize})}" class="first">首页</a>
+                        </li>
+                        <li th:if="${currentPage} gt -1">
+                            <a th:href="@{/showSchoolPage(pageNum=(${currentPage}-1),pageSize=${pageSize}) }"
+                               class="prev">上一页</a>
+                        </li>
+                        <li th:if="${currentPage} lt ${pages}">
+                            <a th:href="@{/showSchoolPage(pageNum=(${currentPage}+1),pageSize=${pageSize})}"
+                               class="next">下一页</a>
+                        </li>
+                        <li>
+                            <a th:href="@{/showSchoolPage(pageNum=${pages}, pageSize=${pageSize})}" class="last">末页</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function followForum(id, schoolname, city, info, isgo, isneed, history, createtime,this1) {
+            layer.msg('ID:'+id+'</br>'+'名称:'+schoolname+'</br>'+'城市:'+city+'</br>'+'信息:'+info +'</br>'+
+                '是否去援助:'+isgo+'</br>'+'是否需要援助:'+isneed+'</br>'+'援助历史:'+history+'</br>'+'创建时间:'+createtime);
+        }
+    </script>
+</html>

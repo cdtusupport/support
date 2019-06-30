@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <base href="<%=basePath %>">
+        <meta charset="UTF-8">
+        <title>西藏援藏系统</title>
+        <link rel="stylesheet" href="../../static/index/css/aidTibetJob.css">
+        <link rel="stylesheet" href="../../static/index/css/public.css">
+        <script src="../../static/layui/layui.all.js"></script>
+    </head>
+    <body>
+        <!--页头-->
+        <header>
+            <div class="content">
+                <!--logo-->
+                <img src="../../static/index/image/logo.png" alt="" class="logo">
+                <!--导航-->
+                <ul class="navLink">
+                    <li><a href="/indexShowPage">首页</a></li>
+                    <li><a href="/indexShowPage">援藏工作</a></li>
+                    <li><a href="/showPolicyPage">援藏政策</a></li>
+                    <li><a href="/showNeedPage">援藏需求</a></li>
+                    <li><a href="/showRoadPage">援藏路径</a></li>
+                    <li><a href="/showSchoolPage">援藏高校</a></li>
+                    <li><a href="/showWorkStatePage">工作动态</a></li>
+                    <li><a href="/showRecruitPage">人员招聘</a></li>
+                </ul>
+                <!--登陆-->
+                <a href="/toLogin" class="login">登陆</a>
+            </div>
+        </header>
+        <!--内容-->
+        <div class="banner content">
+            <img src="../../static/index/image/twoPage_03.png" alt="">
+        </div>
+        <!--        文本-->
+        <div class="content">
+            <div class="inForBox">
+                <div class="inForBox01">
+                    <ul class="pageMain" th:each="policy:${policys}">
+                        <li>
+                            <a title="点击下载文件详情" th:href="@{/downloadPolicyPage(name=${policy.name})}">
+                                <span th:text="${policy.name}"></span>
+                                <span th:text="${policy.publishtime}"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="pageBox">
+                        <li>
+                            <a th:href="@{/showPolicyPage(pageNum=1,pageSize=${pageSize})}" class="first">首页</a>
+                        </li>
+                        <li th:if="${currentPage} gt -1">
+                            <a th:href="@{/showPolicyPage(pageNum=(${currentPage}-1),pageSize=${pageSize}) }"
+                               class="prev">上一页</a>
+                        </li>
+                        <li th:if="${currentPage} lt ${pages}">
+                            <a th:href="@{/showPolicyPage(pageNum=(${currentPage}+1),pageSize=${pageSize})}"
+                               class="next">下一页</a>
+                        </li>
+                        <li>
+                            <a th:href="@{/showPolicyPage(pageNum=${pages}, pageSize=${pageSize})}" class="last">末页</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input th:value="${message}" type="hidden" id="message" name="message">
+    </body>
+    <script>
+        var message1= document.getElementById("message").value;
+        function isEmpty(obj){
+            if(typeof obj == "undefined" || obj == null || obj == ""){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        if (!isEmpty(message1)){
+            layer.msg(message1, function(){
+//关闭后的操作
+            });
+        }
+    </script>
+</html>
