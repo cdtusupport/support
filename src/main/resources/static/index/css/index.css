@@ -12,7 +12,7 @@ header{
 }
 .navLink{}
 .navLink>li{
-    padding: 0 10px;
+    /*padding: 0 10px;*/
     height: 100px;
     line-height: 100px;
     float: left;
