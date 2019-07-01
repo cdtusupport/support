@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -43,7 +44,28 @@ public class PortalController {
     workStateService workstateService;
     //请求跳转到详细页面
     @GetMapping("/indexShowPage")
-    public String indexShowPage() {
+    public String indexShowPage(Map<String, Object> model) {
+        List<NeedInfo> needList = needService.queryAll();
+        List<RecruitInfo> recruitInfoList = recruitService.queryAllRecruit();
+        if(needList.size()<6){
+            model.put("needList",needList);
+        }else {
+            List<NeedInfo> needList1 = new ArrayList();
+            for (int i=0;i<6;i++) {
+                needList1.add(needList.get(i));
+            }
+            model.put("needList",needList1);
+        }
+
+        if(recruitInfoList.size()<6){
+            model.put("recruitInfoList",recruitInfoList);
+        }else {
+            List<NeedInfo> recruitInfoList1 = new ArrayList();
+            for (int i=0;i<6;i++) {
+                recruitInfoList1.add(recruitInfoList1.get(i));
+            }
+            model.put("recruitInfoList",recruitInfoList1);
+        }
         return "index/indexShowPage";
     }
 

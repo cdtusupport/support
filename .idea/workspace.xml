@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="398c1338-6a8d-4305-a0fe-b75b6efb2d89" name="Default Changelist" comment="6 30 51 34吴洋">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/PortalController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/css/aidTibetJob.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/css/public.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/image/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/image/twoPage_03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index/indexShowPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index/showNeedPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index/showPolicyPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index/showRecruitPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index/showRoadPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index/showSchoolPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index/showWorkStatePage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index/showWorkStatePageDetaile.html" afterDir="false" />
+    <list default="true" id="398c1338-6a8d-4305-a0fe-b75b6efb2d89" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/image/app.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/image/beiantubiao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/image/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/image/ext2.bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/image/footer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/image/img01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/image/img02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/image/img03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/image/index-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/image/pic1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/image/tableBg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/image/user-f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index/image/user.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cdtu/support/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/config/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/PolicyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/PolicyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/workstate/alterWorkState.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/workstate/alterWorkState.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/PortalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/PortalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index/css/public.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index/css/public.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index/indexShowPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index/indexShowPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -48,110 +49,64 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index/showPolicyPage.html">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1476">
-                    <caret line="41" column="101" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="101" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/PortalController.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="408">
-                    <caret line="214" column="28" selection-start-line="214" selection-start-column="19" selection-end-line="214" selection-end-column="28" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                      <element signature="method#downloadPolicyPage#0;class#PortalController#0" />
-                      <element signature="method#showRoadPage#0;class#PortalController#0" />
-                      <element signature="method#showSchoolPage#0;class#PortalController#0" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/workStateController.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="274">
-                    <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="85" selection-end-column="42" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index/showWorkStatePage.html">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/index/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="40" column="105" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="105" />
+            <state relative-caret-position="275">
+              <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index/showWorkStatePageDetaile.html">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/PortalController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+            <state relative-caret-position="645">
+              <caret line="66" column="38" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#downloadPolicyPage#0;class#PortalController#0" />
+                <element signature="method#showSchoolPage#0;class#PortalController#0" />
+                <element signature="method#showWorkStatePage#0;class#PortalController#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index/showRecruitPage.html">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/index/css/public.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="70" column="47" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
+            <state relative-caret-position="216">
+              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index/showNeedPage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/needJoin/join.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="83" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index/showNeedPage.html">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index/indexShowPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/ueditor/ueditor.all.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-936">
-              <caret line="7870" column="8" selection-start-line="7870" selection-start-column="8" selection-end-line="7870" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workstate/alterWorkState.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="50" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/RecruitController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-216">
-              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="34" selection-end-column="40" />
+            <state relative-caret-position="406">
+              <caret line="174" column="15" lean-forward="true" selection-start-line="174" selection-start-column="15" selection-end-line="174" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -159,8 +114,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/PolicyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="2613">
               <caret line="99" column="40" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/NeedController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -190,9 +154,24 @@
       <find>for</find>
       <find>File</find>
       <find>gbk</find>
+      <find>content</find>
+      <find>navLink</find>
+      <find>index.css</find>
+      <find>48</find>
+      <find>a</find>
+      <find>footer</find>
+      <find>conten</find>
+      <find>list</find>
+      <find>li</find>
+      <find>style.css</find>
+      <find>width</find>
+      <find>padding: 0 10px; */</find>
+      <find>padding</find>
+      <find>人员招聘</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\asus\IdeaProjects\support\src\main\resources\templates\index</dir>
+      <dir>C:\Users\asus\IdeaProjects\support\src\main\resources\static\index</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -205,6 +184,9 @@
       </map>
     </option>
     <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -238,24 +220,28 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/workstate/addWorkState.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/common/indexbar.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/config/ShiroConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/common/bar.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index/indexbar.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index/indexShow.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/school/list.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/RoadController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index/showRoadPage.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index/showNeedPage.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/PolicyController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index/showSchoolPage.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index/showPolicyPage.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index/showRecruitPage.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/workstate/alterWorkState.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index/showWorkStatePage.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/PortalController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index/showWorkStatePageDetaile.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/PolicyController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/config/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/index/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/index/css/public.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/index/css/index.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/PortalController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index/indexShowPage.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index/showNeedPage.html" />
       </list>
     </option>
   </component>
@@ -299,6 +285,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -346,15 +333,6 @@
               <item name="support" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="support" type="b2602c69:ProjectViewProjectNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -389,6 +367,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="needJoin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="support" type="b2602c69:ProjectViewProjectNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="school" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -415,7 +402,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -428,7 +414,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/index" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/index/css" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -439,26 +425,26 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static\index\image" />
-      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static\index\css" />
-      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static\login\images" />
-      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static\login\css" />
-      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\templates\index" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.cdtu.support.service.impl" />
+      <recent name="com.cdtu.support.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\templates\index" />
       <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static\index\css" />
       <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static\index\image" />
+      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\templates\index" />
       <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static\login\css" />
       <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static\index" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.cdtu.support.controller" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.cdtu.support.service.impl" />
-      <recent name="com.cdtu.support.service" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static\index\image" />
+      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static\index\css" />
+      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static\login\images" />
+      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\static\login\css" />
+      <recent name="C:\Users\asus\IdeaProjects\support\src\main\resources\templates\index" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -496,10 +482,15 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cdtu.support.SupportApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.ce" />
+      <item itemvalue="Spring Boot.SupportApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.SupportApplication" />
@@ -526,7 +517,8 @@
       <workItem from="1561686854003" duration="11097000" />
       <workItem from="1561704126508" duration="2185000" />
       <workItem from="1561796109334" duration="1444000" />
-      <workItem from="1561923027470" duration="2408000" />
+      <workItem from="1561923027470" duration="2993000" />
+      <workItem from="1561954441922" duration="8702000" />
     </task>
     <task id="LOCAL-00001" summary="ceshi">
       <created>1561530394230</created>
@@ -619,16 +611,31 @@
       <option name="project" value="LOCAL" />
       <updated>1561901672535</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="6 30 51 34吴洋">
+      <created>1561925500796</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1561925500796</updated>
+    </task>
+    <task id="LOCAL-00015" summary="7 1 04:14 吴洋">
+      <created>1561925699296</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1561925699296</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81431000" />
+    <option name="totallyTimeSpent" value="90718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3033049" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3065032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -638,7 +645,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8667377" visible="true" weight="0.16594361" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8667377" visible="true" weight="0.27765727" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8614072" weight="0.64425164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -725,7 +732,8 @@
     <MESSAGE value="6 29 16：16吴洋" />
     <MESSAGE value="6 29 16：30吴洋" />
     <MESSAGE value="6 30 51 34吴洋" />
-    <option name="LAST_COMMIT_MESSAGE" value="6 30 51 34吴洋" />
+    <MESSAGE value="7 1 04:14 吴洋" />
+    <option name="LAST_COMMIT_MESSAGE" value="7 1 04:14 吴洋" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -745,40 +753,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index源码/advershow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1067" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index源码/adverindex.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index/image/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index源码/indexadd.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index源码/needshow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6588" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index源码/workshow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2484" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index/css/public.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workstate/addWorkState.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -794,30 +768,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/config/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
-          <folding>
-            <element signature="e#1955#1956#0" expanded="true" />
-            <element signature="e#1985#1986#0" expanded="true" />
-            <element signature="e#3134#3135#0" expanded="true" />
-            <element signature="e#3166#3167#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index/indexShow.html" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/config/MyBatisConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2710" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/PermissionController.java">
@@ -831,13 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index/css/aidTibetJob.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -855,13 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
           <caret line="25" column="21" selection-end-line="131" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index/indexShowPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="50" column="49" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -914,31 +856,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/pojo/PolicyExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="94" column="22" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/NeedController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="37" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="56" column="52" lean-forward="true" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -973,13 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index/showPolicyPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1476">
-          <caret line="41" column="101" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/ueditor/lang/zh-cn/zh-cn.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -993,20 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="50" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/PolicyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="99" column="40" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/workStateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="85" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1031,58 +931,174 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/RecruitController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="34" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/PortalController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="214" column="28" selection-start-line="214" selection-start-column="19" selection-end-line="214" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#downloadPolicyPage#0;class#PortalController#0" />
-            <element signature="method#showRoadPage#0;class#PortalController#0" />
-            <element signature="method#showSchoolPage#0;class#PortalController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index/showWorkStatePage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="1440">
           <caret line="40" column="105" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/ueditor/ueditor.all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-936">
-          <caret line="7870" column="8" selection-start-line="7870" selection-start-column="8" selection-end-line="7870" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index/showWorkStatePageDetaile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="2160">
           <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/ueditor/ueditor.all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283176">
+          <caret line="7870" column="8" selection-start-line="7870" selection-start-column="8" selection-end-line="7870" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/RecruitController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="34" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/workStateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2304">
+          <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="85" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="26" selection-start-line="26" selection-start-column="2" selection-end-line="35" selection-end-column="55" />
+          <folding>
+            <element signature="e#1955#1956#0" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
+            <element signature="e#3134#3135#0" expanded="true" />
+            <element signature="e#3166#3167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index/image/index-icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index/image/img03.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index/image/user.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index/showPolicyPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index/image/footer.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-288">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index/css/public.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index/css/aidTibetJob.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/PortalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="66" column="38" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#downloadPolicyPage#0;class#PortalController#0" />
+            <element signature="method#showSchoolPage#0;class#PortalController#0" />
+            <element signature="method#showWorkStatePage#0;class#PortalController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/PolicyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2613">
+          <caret line="99" column="40" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index/showRecruitPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="70" column="47" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
+        <state relative-caret-position="285">
+          <caret line="40" column="28" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cdtu/support/controller/NeedController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/needJoin/join.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="83" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index/showNeedPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+        <state relative-caret-position="36">
+          <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index/indexShowPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="174" column="15" lean-forward="true" selection-start-line="174" selection-start-column="15" selection-end-line="174" selection-end-column="15" />
         </state>
       </provider>
     </entry>

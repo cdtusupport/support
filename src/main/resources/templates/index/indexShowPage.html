@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
     <head>
-        <base href="<%=basePath %>">
         <meta charset="UTF-8">
         <title>西藏援藏系统</title>
-        <link rel="stylesheet" href="../../static/index/css/aidTibetJob.css">
         <link rel="stylesheet" href="../../static/index/css/public.css">
+        <link rel="stylesheet" href="../../static/index/css/index.css">
+        <script src="../../static/layui/layui.all.js"></script>
     </head>
     <body>
         <!--页头-->
@@ -29,32 +29,150 @@
             </div>
         </header>
         <!--内容-->
-        <div class="banner content">
-            <img src="../../static/index/image/twoPage_03.png" alt="">
-        </div>
-<!--        文本-->
-        <div class="content">
-            <div class="inForBox">
-                <div class="inForBox01">
-                    <ul class="pageMain">
+        <!--网页内容-->
+        <section>
+            <div class="content">
+                <div class="section01">
+                    <ul class="section01-left">
                         <li>
-                            <a href="#">
-                                <span>测试标题</span>
-                                <span>2018-04-20 08:00:00</span>
-                            </a>
+                            <div class="sectionMode01">
+                                <span></span>
+                                <h1>援藏工作</h1>
+                            </div>
+                            <div class="sectionMode02">
+                                <a href="/indexShowPage">查看更多</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sectionMode01">
+                                <span></span>
+                                <h1>援藏政策</h1>
+                            </div>
+                            <div class="sectionMode02">
+                                <a href="/showPolicyPage">查看更多</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sectionMode01">
+                                <span></span>
+                                <h1>援藏路径</h1>
+                            </div>
+                            <div class="sectionMode02">
+                                <a href="/showRoadPage">查看更多</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sectionMode01">
+                                <span></span>
+                                <h1>人员招聘</h1>
+                            </div>
+                            <div class="sectionMode02">
+                                <a href="/showRecruitPage">查看更多</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sectionMode01">
+                                <span></span>
+                                <h1>援藏需求</h1>
+                            </div>
+                            <div class="sectionMode02">
+                                <a href="/showNeedPage">查看更多</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sectionMode01">
+                                <span></span>
+                                <h1>援藏高校</h1>
+                            </div>
+                            <div class="sectionMode02">
+                                <a href="/showSchoolPage">查看更多</a>
+                            </div>
                         </li>
                     </ul>
-                    <div class="pageBox">
-                        <p class="len">共 <span>10</span>条记录</p>
-                        <p class="iNum">当前第 <span>1/2</span> 页</p>
-
-                        <a href='#' class="first">首页</a>
-                        <a href='#' class="prev">上一页</a>
-                        <a href='#' class="next">下一页</a>
-                        <a href='#' class="last">尾页</a>
+                    <div class="section01-right">
+                        <div class="section01-right-title">
+                            <span></span>
+                            人员招聘
+                        </div>
+                        <ul class="list" th:each="recruit:${recruitInfoList}">
+                            <li>
+                                <a title="点击查看详情" th:onclick="followForum([[${recruit.id}]],[[${recruit.name}]],
+                            [[${recruit.publishtime}]],this);">
+                                    <span th:text="${recruit.name}"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section02">
+                    <div class="section02-left">
+                        <div class="section02-left-img">
+                            <ul class="section02-slider-img">
+                                <li><img src="../../static/index/image/img03.jpg" alt="1"></li>
+                                <li><img src="../../static/index/image/img01.jpg" alt="2"></li>
+                                <li><img src="../../static/index/image/img02.jpg" alt="3"></li>
+                            </ul>
+                            <div class="section02-slider-btn">
+                                <span index="1" class="on"></span>
+                                <span index="2"></span>
+                                <span index="3"></span>
+                            </div>
+                        </div>
+                        <h4>援藏老师和学生户外项目</h4>
+                    </div>
+                    <div class="section02-center">
+                        <div   class="section02-center-title">
+                            <h1>援藏需求</h1>
+                            <a href="/showNeedPage">更多</a>
+                        </div>
+                        <ul class="list" th:each="need:${needList}">
+                            <li>
+                                <a title="点击查看详情" th:onclick="followForum1([[${need.id}]],[[${need.name}]],
+                            [[${need.userid}]],[[${need.schoolid}]],[[${need.level}]],[[${need.info}]],
+                            [[${need.publishtime}]],[[${need.edittime}]],this);">
+                                    <span th:text="${need.name}"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section02-right">
+                        <div class="section02-right-title">
+                            <span></span>
+                            常见问题
+                        </div>
+                        <ul class="list">
+                            <li>更多精彩，敬请期待</li>
+                            <li>更多精彩，敬请期待</li>
+                            <li>更多精彩，敬请期待</li>
+                            <li>更多精彩，敬请期待</li>
+                            <li>更多精彩，敬请期待</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!--网页底部-->
     </body>
+    <script>
+        function followForum(id, name, publishtime, this1) {
+            layer.msg('ID:' + id + '</br>' + '名称:' + name + '</br>' + '发布时间:' + publishtime);
+        }
+    </script>
+    <script>
+        function followForum1(id, name, userid, schoolid, level, info, publishtime, edittime,this1) {
+            layer.msg('ID:'+id+'</br>'+'名称:'+name+'</br>'+'发布者:'+userid+'</br>'+'发布学校:'+schoolid +'</br>'+
+                '紧急情况:'+level+'</br>'+'发布时间:'+publishtime+'</br>'+'最后更改时间:'+edittime+'</br>'+'需求详细信息:'+info);
+            //询问框
+
+            layer.confirm('ID:'+id+'</br>'+'名称:'+name+'</br>'+'发布者:'+userid+'</br>'+'发布学校:'+schoolid +'</br>'+
+                '紧急情况:'+level+'</br>'+'发布时间:'+publishtime+'</br>'+'最后更改时间:'+edittime+'</br>'+'需求详细信息:'+info, {
+                btn: ['报名','返回'] //按钮
+            }, function(){
+                //需求添加链接来进行报名
+                layer.msg('进入报名界面', {icon: 1});
+            }, function(){
+
+            });
+        }
+    </script>
 </html>
