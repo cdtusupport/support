@@ -12,7 +12,7 @@
     <div th:replace="common/bar::sidebar"></div>
     <div class="layui-body">
 
-        <form th:action="@{/school/queryByName}" class="layui-form">
+        <!--<form th:action="@{/school/queryByName}" class="layui-form">
             <div class="layui-form-item">
                 <div class="layui-inline">
                     <label class="layui-form-label">高校名称</label>
@@ -23,60 +23,60 @@
                 <button type="submit" class="layui-btn layui-btn-normal">查询</button>
                 <a th:href="@{/school/toAddPage}" class="layui-btn layui-btn-normal">新增</a>
             </div>
-        </form>
+        </form>-->
         <table class="layui-table">
             <thead>
             <tr>
                 <th>#</th>
-                <th>名称</th>
-                <th>城市</th>
-                <th>信息</th>
-                <th>isGo</th>
-                <th>isNeed</th>
-                <th>历史</th>
-                <th>创建时间</th>
+                <th>需求id</th>
+                <th>用户名</th>
+                <th>电话</th>
+                <th>学校名称</th>
+                <th>QQ</th>
+                <th>课程</th>
+                <th>其他</th>
                 <th>操作</th>
             </tr>
             </thead>
             <tbody>
-            <tr th:each="school : ${schools}">
-                <td th:text="${school.id}"></td>
-                <td th:text="${school.schoolname}"></td>
-                <td th:text="${school.city}"></td>
-                <td th:text="${school.info}"></td>
-                <td th:text="${school.isgo}"></td>
-                <td th:text="${school.isneed}"></td>
-                <td th:text="${school.history}"></td>
-                <td th:text="${school.createtime}"></td>
-                <td>
-                    <a class="layui-btn" th:href="@{/school/toUpdatePage(id=${school.id},pageNum=${currentPage},pageSize=${pageSize})}">编辑</a>
-                    <button th:attr="del_uri=@{/school(id=${school.id},pageNum=${currentPage},pageSize=${pageSize})}"
-                            class="layui-btn layui-btn-danger deleteBtn">删除
-                    </button>
-                    <a class="layui-btn" th:href="@{/school/toUpdatePage(id=${school.id},pageNum=${currentPage},pageSize=${pageSize})}">查看</a>
-                </td>
+            <tr th:each="needJoin : ${needJoinList}">
+                <td th:text="${needJoin.id}"></td>
+                <td th:text="${needJoin.inneedid}"></td>
+                <td th:text="${needJoin.username}"></td>
+                <td th:text="${needJoin.telephone}"></td>
+                <td th:text="${needJoin.schoolname}"></td>
+                <td th:text="${needJoin.qq}"></td>
+                <td th:text="${needJoin.course}"></td>
+                <td th:text="${needJoin.other}"></td>
+                <!--<td>-->
+                    <!--<a class="layui-btn" th:href="@{/school/toUpdatePage(id=${school.id},pageNum=${currentPage},pageSize=${pageSize})}">编辑</a>-->
+                    <!--<button th:attr="del_uri=@{/school(id=${school.id},pageNum=${currentPage},pageSize=${pageSize})}"-->
+                            <!--class="layui-btn layui-btn-danger deleteBtn">删除-->
+                    <!--</button>-->
+                    <!--<a class="layui-btn" th:href="@{/school/toUpdatePage(id=${school.id},,pageNum=${currentPage},pageSize=${pageSize})}">查看</a>-->
+                <!--</td>-->
             </tr>
             </tbody>
         </table>
         <nav>
             <ul>
                 <li class="layui-btn ">
-                    <a th:href="@{/school/list(pageNum=1,pageSize=${pageSize})}">首页</a>
+                    <a th:href="@{/needJoin/list(pageNum=1,pageSize=${pageSize})}">首页</a>
                 </li>
-                <li class="layui-btn" th:if="${currentPage} gt -1">
-                    <a th:href="@{/school/list(pageNum=(${currentPage}-1),pageSize=${pageSize})}">上一页</a>
+                <li class="layui-btn" th:if="${pageNum} gt -1">
+                    <a th:href="@{/needJoin/list(pageNum=(${pageNum}-1),pageSize=${pageSize})}">上一页</a>
                 </li>
-                <li class="layui-btn" th:if="${currentPage} lt 1">
-                    <a th:href="@{/school/list(pageNum=1, pageSize=${pageSize})}">上一页</a>
+                <li class="layui-btn" th:if="${pageNum} lt 1">
+                    <a th:href="@{/needJoin/list(pageNum=1, pageSize=${pageSize})}">上一页</a>
                 </li>
-                <li class="layui-btn" th:if="${currentPage} lt ${pages}">
-                    <a th:href="@{/school/list(pageNum=(${currentPage}+1),pageSize=${pageSize})}">下一页</a>
+                <li class="layui-btn" th:if="${pageNum} lt ${pages}">
+                    <a th:href="@{/needJoin/list(pageNum=(${pageNum}+1),pageSize=${pageSize})}">下一页</a>
                 </li>
-                <li class="layui-btn" th:if="${currentPage} ge ${pages}">
-                    <a th:href="@{/school/list(pageNum=${pages}, pageSize=${pageSize})}">下一页</a>
+                <li class="layui-btn" th:if="${pageNum} ge ${pages}">
+                    <a th:href="@{/needJoin/list(pageNum=${pages}, pageSize=${pageSize})}">下一页</a>
                 </li>
                 <li class="layui-btn">
-                    <a th:href="@{/school/list(pageNum=${pages}, pageSize=${pageSize})}">末页</a>
+                    <a th:href="@{/needJoin/list(pageNum=${pages}, pageSize=${pageSize})}">末页</a>
                 </li>
             </ul>
 

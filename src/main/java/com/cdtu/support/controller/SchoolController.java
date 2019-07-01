@@ -16,6 +16,7 @@ import java.util.Map;
 
 @Controller
 @RequiresRoles("super")
+@SuppressWarnings("ALL")
 public class SchoolController {
 	@Autowired
 	SchoolService schoolService;
@@ -29,7 +30,6 @@ public class SchoolController {
 
 		List<SchoolWithBLOBs> schoolList = schoolService.queryAll();
 
-		System.out.println("pageNum = " + pageNum);
 		model.put("schools", schoolList);
 		model.put("currentPage", pageNum);
 		model.put("pages", page.getPages());

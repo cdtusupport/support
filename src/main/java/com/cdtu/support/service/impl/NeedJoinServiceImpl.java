@@ -7,6 +7,8 @@ import com.cdtu.support.util.SupportUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class NeedJoinServiceImpl implements NeedJoinService {
 
@@ -19,5 +21,12 @@ public class NeedJoinServiceImpl implements NeedJoinService {
 		int insertResult = needJoinMapper.insertSelective(needJoin);
 
 		return insertResult;
+	}
+
+	@Override
+	public List<NeedJoin> queryAll() {
+
+		List<NeedJoin> needJoinList = needJoinMapper.selectByExample(null);
+		return needJoinList;
 	}
 }

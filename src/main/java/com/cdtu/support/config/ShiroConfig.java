@@ -24,16 +24,16 @@ public class ShiroConfig {
 		shiroFilterFactoryBean.setSecurityManager(securityManager);
 
 		LinkedHashMap<String, String> filterChainDefinitionMap = new LinkedHashMap<>();
-//		filterChainDefinitionMap.put("/css/**", "anon");
-//		filterChainDefinitionMap.put("/js/**", "anon");
-//		filterChainDefinitionMap.put("/druid/**", "anon");
-//		filterChainDefinitionMap.put("/utf8-jsp/**", "anon");
-//		filterChainDefinitionMap.put("/login", "anon");
-//		filterChainDefinitionMap.put("/logout", "logout");
-//		filterChainDefinitionMap.put("/**", "authc");
-//
-//		shiroFilterFactoryBean.setLoginUrl("/toLogin");
-//		shiroFilterFactoryBean.setSuccessUrl("/index");
+		filterChainDefinitionMap.put("/css/**", "anon");
+		filterChainDefinitionMap.put("/js/**", "anon");
+		filterChainDefinitionMap.put("/druid/**", "anon");
+		filterChainDefinitionMap.put("/utf8-jsp/**", "anon");
+		filterChainDefinitionMap.put("/login", "anon");
+		filterChainDefinitionMap.put("/logout", "logout");
+		filterChainDefinitionMap.put("/**", "authc");
+
+		shiroFilterFactoryBean.setLoginUrl("/toLogin");
+		shiroFilterFactoryBean.setSuccessUrl("/index");
 
 		shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
 
