@@ -231,7 +231,7 @@ public class PortalController {
         model.put("pageSize", pageSize);
         return "index/showWorkStatePage";
     }
-    @GetMapping("showWorkStatePageDetaile")
+    @GetMapping("/showWorkStatePageDetaile")
     public String showWorkStatePageDetaile(String id, Map<String, Object> model) {
         WorkState workState = workstateService.queryById(id);
         model.put("workState", workState);

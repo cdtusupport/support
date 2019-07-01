@@ -18,7 +18,7 @@ import java.util.Properties;
 public class ShiroConfig {
 
 	@Bean
-	public ShiroFilterFactoryBean shiroFilterFactoryBean(SecurityManager securityManager){
+	public ShiroFilterFactoryBean shiroFilterFactoryBean(SecurityManager securityManager) {
 
 		ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
 		shiroFilterFactoryBean.setSecurityManager(securityManager);
@@ -30,6 +30,17 @@ public class ShiroConfig {
 		filterChainDefinitionMap.put("/utf8-jsp/**", "anon");
 		filterChainDefinitionMap.put("/login", "anon");
 		filterChainDefinitionMap.put("/logout", "logout");
+
+		filterChainDefinitionMap.put("/indexShowPage", "anon");
+		filterChainDefinitionMap.put("/showPolicyPage", "anon");
+		filterChainDefinitionMap.put("/downloadPolicyPage", "anon");
+		filterChainDefinitionMap.put("/showNeedPage", "anon");
+		filterChainDefinitionMap.put("/showRoadPage", "anon");
+		filterChainDefinitionMap.put("/showSchoolPage", "anon");
+		filterChainDefinitionMap.put("/showWorkStatePage", "anon");
+		filterChainDefinitionMap.put("/showWorkStatePageDetaile", "anon");
+		filterChainDefinitionMap.put("/showRecruitPage", "anon");
+
 		filterChainDefinitionMap.put("/**", "authc");
 
 		shiroFilterFactoryBean.setLoginUrl("/toLogin");
@@ -41,7 +52,7 @@ public class ShiroConfig {
 	}
 
 	@Bean
-	public SecurityManager securityManager(ShiroRealm shiroRealm){
+	public SecurityManager securityManager(ShiroRealm shiroRealm) {
 		DefaultWebSecurityManager defaultWebSecurityManager = new DefaultWebSecurityManager();
 		defaultWebSecurityManager.setRealm(shiroRealm);
 		return defaultWebSecurityManager;
@@ -49,26 +60,26 @@ public class ShiroConfig {
 
 
 	@Bean
-	public ShiroRealm shiroRealm(){
+	public ShiroRealm shiroRealm() {
 		return new ShiroRealm();
 	}
 
 	@Bean
-	public AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor(SecurityManager securityManager){
+	public AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor(SecurityManager securityManager) {
 		AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor = new AuthorizationAttributeSourceAdvisor();
 		authorizationAttributeSourceAdvisor.setSecurityManager(securityManager);
 		return authorizationAttributeSourceAdvisor;
 	}
 
 	@Bean
-	public DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator(){
+	public DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator() {
 		DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator = new DefaultAdvisorAutoProxyCreator();
 		defaultAdvisorAutoProxyCreator.setProxyTargetClass(true);
 		return defaultAdvisorAutoProxyCreator;
 	}
 
 	@Bean
-	public SimpleMappingExceptionResolver simpleMappingExceptionResolver(){
+	public SimpleMappingExceptionResolver simpleMappingExceptionResolver() {
 		SimpleMappingExceptionResolver resolver = new SimpleMappingExceptionResolver();
 		Properties properties = new Properties();
 		properties.setProperty("org.apache.shiro.authz.UnauthorizedException", "/index");
@@ -78,7 +89,7 @@ public class ShiroConfig {
 	}
 
 	@Bean
-	public ShiroDialect getShiroDialect(){
+	public ShiroDialect getShiroDialect() {
 		return new ShiroDialect();
 	}
 }
