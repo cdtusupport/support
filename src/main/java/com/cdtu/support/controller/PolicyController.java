@@ -67,14 +67,14 @@ public class PolicyController {
         Map<String, Object> result = new HashMap<>();
         File path = null;
         try {
-            path = new File(ResourceUtils.getURL("classpath:static").getPath());
+            path = new File(ResourceUtils.getURL("classpath:static").getPath()+"\\policy");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
         if (file != null && !file.isEmpty()){
             try {
 
-                file.transferTo(new File(path+"\\policy"+"\\"+file.getOriginalFilename()));
+                file.transferTo(new File(path+"\\"+file.getOriginalFilename()));
                 result.put("code", 200);
                 result.put("msg", "success");
             } catch (IOException e) {
