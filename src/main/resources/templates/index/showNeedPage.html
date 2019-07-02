@@ -67,18 +67,45 @@
         </div>
     </body>
     <script>
-        function followForum(id, name, userid, schoolid, level, info, publishtime, edittime,this1) {
-            layer.msg('ID:'+id+'</br>'+'名称:'+name+'</br>'+'发布者:'+userid+'</br>'+'发布学校:'+schoolid +'</br>'+
-                '紧急情况:'+level+'</br>'+'发布时间:'+publishtime+'</br>'+'最后更改时间:'+edittime+'</br>'+'需求详细信息:'+info);
+        function followForum(id, name, userid, schoolid, level, info, publishtime, edittime, this1) {
+            layer.msg('ID:' + id + '</br>' + '名称:' + name + '</br>' + '发布者:' + userid + '</br>' + '发布学校:' + schoolid + '</br>' +
+                '紧急情况:' + level + '</br>' + '发布时间:' + publishtime + '</br>' + '最后更改时间:' + edittime + '</br>' + '需求详细信息:' + info);
             //询问框
-
-            layer.confirm('ID:'+id+'</br>'+'名称:'+name+'</br>'+'发布者:'+userid+'</br>'+'发布学校:'+schoolid +'</br>'+
-                '紧急情况:'+level+'</br>'+'发布时间:'+publishtime+'</br>'+'最后更改时间:'+edittime+'</br>'+'需求详细信息:'+info, {
-                btn: ['报名','返回'] //按钮
-            }, function(){
-                //需求添加链接来进行报名
+            var inNeedld = id
+            layer.confirm('ID:' + id + '</br>' + '名称:' + name + '</br>' + '发布者:' + userid + '</br>' + '发布学校:' + schoolid + '</br>' +
+                '紧急情况:' + level + '</br>' + '发布时间:' + publishtime + '</br>' + '最后更改时间:' + edittime + '</br>' + '需求详细信息:' + info, {
+                btn: ['报名', '返回'] //按钮
+            }, function () {
+                //弹出一个页面层
                 layer.msg('进入报名界面', {icon: 1});
-            }, function(){
+                layer.open({
+                    type: 1,
+                    area: ['300px', '200px'],
+                    shadeClose: false, //点击遮罩关闭
+                    content: '<form class="layui-form" action="needAdd" method="post">\n' +
+                        '<input type="hidden" name="inneedid" id="inneedid"/>' +
+                        '            <label for="username">姓名:</label>\n' +
+                        '            <input type="text" name="username" id="username" />\n' +
+                        '            <br>\n' +
+                        '            <label for="telephone">电话:</label>\n' +
+                        '            <input type="text" name="telephone" id="telephone"/>\n' +
+                        '            <br>\n' +
+                        '            <label for="schoolname">学校名称:</label>\n' +
+                        '            <input type="text" name="schoolname" id="schoolname"/>\n' +
+                        '            <br>\n' +
+                        '            <label for="qq">qq:</label>\n' +
+                        '            <input type="text" name="qq" id="qq"/>\n' +
+                        '            <br>\n' +
+                        '            <label for="course">所选课程:</label>\n' +
+                        '            <input type="text" name="course" id="course"/>\n' +
+                        '            <div class="am-cf">\n' +
+                        '                <input type="submit"  id="submit" value="注 册"  class="am-btn am-btn-primary am-btn-sm am-fl">\n' +
+                        '            </div>\n' +
+                        '        </form>'
+                });
+                document.getElementById('inneedid').value = inNeedld;
+                //需求添加链接来进行报名
+            }, function () {
 
             });
         }

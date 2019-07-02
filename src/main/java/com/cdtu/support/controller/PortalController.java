@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
@@ -42,6 +43,8 @@ public class PortalController {
     //工作动态
     @Autowired
     workStateService workstateService;
+    @Autowired
+    NeedJoinService needJoinService;
     //请求跳转到详细页面
     @GetMapping("/indexShowPage")
     public String indexShowPage(Map<String, Object> model) {
@@ -86,7 +89,7 @@ public class PortalController {
     //完成
     @GetMapping("/downloadPolicyPage")
     public String downloadPolicyPage(String name, Model model,
-                                   HttpServletRequest request,HttpServletResponse response) throws UnsupportedEncodingException {
+                                     HttpServletRequest request,HttpServletResponse response) throws UnsupportedEncodingException {
         System.out.println("文件名为："+name);
         List<Policy> policyList= policyService.queryByName(name);
         String fileName=policyList.get(0).getName();
@@ -208,7 +211,11 @@ public class PortalController {
         model.put("pageSize", pageSize);
         return "index/showSchoolPage";
     }
-
+    @PostMapping("/needAdd")
+    public String needAdd(NeedJoin needJoin){
+        needJoinService.addNeedJoin(needJoin);
+        return "redirect:/showNeedPage";
+    }
     @GetMapping("/showWorkStatePage")
     public String showWorkStatePage(@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
                                     @RequestParam(value = "pageSize", defaultValue = "6") Integer pageSize,
@@ -237,7 +244,7 @@ public class PortalController {
         model.put("workState", workState);
         return "index/showWorkStatePageDetaile";
     }
-//完成
+    //完成
     @GetMapping("/showRecruitPage")
     public String showRecruitPage(@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
                                   @RequestParam(value = "pageSize", defaultValue = "6") Integer pageSize,
