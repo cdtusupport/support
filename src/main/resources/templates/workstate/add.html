@@ -15,21 +15,18 @@
             <div th:replace="common/bar::sidebar"></div>
 
             <div class="layui-body">
-                <form class="layui-form" th:action="@{/workState/addworkState}" method="post">
-<!--                    //因为没有设置session所以先定义一个值-->
-                    <input name="userid" value="130ad" type="hidden">
-                    <input type="text" name="id" style="display:none"  th:value="${workState.id}" >
+                <form class="layui-form" th:action="@{/workState}" method="post">
+                    <input name="userid" th:value="${session.userId}" type="hidden">
                     <div class="layui-form-item" style=" margin:10px;">
                         <label class="layui-form-label">标题</label>
                         <div class="layui-input-inline">
-                            <input type="text" name="name" required lay-verify="required" th:value="${workState.name}"
+                            <input type="text" name="name" required lay-verify="required" placeholder="请输入动态名称"
                                    autocomplete="off" class="layui-input">
                         </div>
                     </div>
                     <div class="layui-form-item" >
                         <label class="layui-form-label">动态内容</label>
                         <div class="layui-input-inline" style="width:900px;">
-                            <input type="hidden" th:value="${workState.content}" id="data1">
                             <script type="text/plain" id="info" name="content"></script>
                         </div>
                     </div>
@@ -49,13 +46,8 @@
         </div>
         <script src="../../static/layui/layui.js"></script>
         <script src="../../static/jquery/jquery-3.3.1.min.js"></script>
-        <script >
+        <script>
             var info = UE.getEditor("info")
-            info.ready(function() {
-                var data1=document.getElementById('data1').value;
-                console.log(data1)
-                info.setContent(data1);
-            });
         </script>
         <script>
             layui.use(["layer", "form", "upload", "jquery", "element"], function () {

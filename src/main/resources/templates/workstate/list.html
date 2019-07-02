@@ -17,11 +17,11 @@
                         <div class="layui-inline">
                             <label class="layui-form-label">动态查询</label>
                             <div class="layui-input-inline">
-                                <input type="text" name="workStateName" placeholder="请输入动态名" class="layui-input">
+                                <input type="text" name="workStateName" placeholder="请输入名称" class="layui-input">
                             </div>
                         </div>
                         <button type="submit" class="layui-btn layui-btn-normal">查询</button>
-                        <a class="layui-btn layui-btn-danger deleteBtn " href="#" th:href="@{/workState/addWorkStatePage}">
+                        <a class="layui-btn layui-btn-primary " th:href="@{/workState/toAddWorkStatePage}">
                             新增</a>
                     </div>
                 </form>
@@ -54,22 +54,22 @@
                 <nav>
                     <ul>
                         <li class="layui-btn ">
-                            <a th:href="@{/workState/workStateList(pageNum=1,pageSize=${pageSize})}">首页</a>
+                            <a th:href="@{/workState/list(pageNum=1,pageSize=${pageSize})}">首页</a>
                         </li>
-                        <li class="layui-btn" th:if="${currentPage} gt -1">
-                            <a th:href="@{/workState/workStateList(pageNum=(${currentPage}-1),pageSize=${pageSize})}">上一页</a>
+                        <li class="layui-btn" th:if="${pageNum} gt -1">
+                            <a th:href="@{/workState/list(pageNum=(${pageNum}-1),pageSize=${pageSize})}">上一页</a>
                         </li>
-                        <li class="layui-btn" th:if="${currentPage} lt 1">
-                            <a th:href="@{/workState/workStateList(pageNum=1, pageSize=${pageSize})}">上一页</a>
+                        <li class="layui-btn" th:if="${pageNum} lt 1">
+                            <a th:href="@{/workState/list(pageNum=1, pageSize=${pageSize})}">上一页</a>
                         </li>
-                        <li class="layui-btn" th:if="${currentPage} lt ${pages}">
-                            <a th:href="@{/workState/workStateList(pageNum=(${currentPage}+1),pageSize=${pageSize})}">下一页</a>
+                        <li class="layui-btn" th:if="${pageNum} lt ${pages}">
+                            <a th:href="@{/workState/list(pageNum=(${pageNum}+1),pageSize=${pageSize})}">下一页</a>
                         </li>
-                        <li class="layui-btn" th:if="${currentPage} ge ${pages}">
-                            <a th:href="@{/workState/workStateList(pageNum=${pages}, pageSize=${pageSize})}">下一页</a>
+                        <li class="layui-btn" th:if="${pageNum} ge ${pages}">
+                            <a th:href="@{/workState/list(pageNum=${pages}, pageSize=${pageSize})}">下一页</a>
                         </li>
                         <li class="layui-btn">
-                            <a th:href="@{/workState/workStateList(pageNum=${pages}, pageSize=${pageSize})}">末页</a>
+                            <a th:href="@{/workState/list(pageNum=${pages}, pageSize=${pageSize})}">末页</a>
                         </li>
                     </ul>
 
