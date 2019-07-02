@@ -58,29 +58,6 @@
                 </td>
             </tbody>
         </table>
-        <!--<nav>-->
-            <!--<ul>-->
-                <!--<li class="layui-btn ">-->
-                    <!--<a th:href="@{/need/need(pageNum=1,pageSize=${pageSize})}">首页</a>-->
-                <!--</li>-->
-                <!--<li class="layui-btn" th:if="${currentPage} gt -1">-->
-                    <!--<a th:href="@{/need/need(pageNum=(${currentPage}-1),pageSize=${pageSize})}">上一页</a>-->
-                <!--</li>-->
-                <!--<li class="layui-btn" th:if="${currentPage} lt 1">-->
-                    <!--<a th:href="@{/need/need(pageNum=1, pageSize=${pageSize})}">上一页</a>-->
-                <!--</li>-->
-                <!--<li class="layui-btn" th:if="${currentPage} lt ${pages}">-->
-                    <!--<a th:href="@{/need/need(pageNum=(${currentPage}+1),pageSize=${pageSize})}">下一页</a>-->
-                <!--</li>-->
-                <!--<li class="layui-btn" th:if="${currentPage} ge ${pages}">-->
-                    <!--<a th:href="@{/need/need(pageNum=${pages}, pageSize=${pageSize})}">下一页</a>-->
-                <!--</li>-->
-                <!--<li class="layui-btn">-->
-                    <!--<a th:href="@{/need/need(pageNum=${pages}, pageSize=${pageSize})}">末页</a>-->
-                <!--</li>-->
-            <!--</ul>-->
-        <!--</nav>-->
-
 
         <form id="deleteNeedFrom" method="post">
             <input type="hidden" name="_method" value="delete">

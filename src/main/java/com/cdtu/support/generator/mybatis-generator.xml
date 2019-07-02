@@ -38,7 +38,7 @@
 
         <!--<table tableName="Person" domainObjectName="Person"/>-->
         <!--<table tableName="school" domainObjectName="School"/>-->
-        <!--<table tableName="user" domainObjectName="User"/>-->
+        <!--<table tableName="user" domainObjectName="user"/>-->
         <!--<table tableName="needinfo" domainObjectName="NeedInfo"/>-->
         <!--<table tableName="needjoin" domainObjectName="NeedJoin"/>-->
         <!--<table tableName="policy" domainObjectName="Policy"/>-->

@@ -13,12 +13,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
+//登录
 public class LoginController {
 
 	@Autowired
@@ -29,12 +31,16 @@ public class LoginController {
 		return "login";
 	}
 
+	@GetMapping("/index")
+	public String index() {
+		return "index";
+	}
+
 	@PostMapping("/login")
 	public String login(String username,
 	                    String password,
 	                    Model model,
-	                    HttpServletRequest httpServletRequest
-	) {
+	                    HttpServletRequest httpServletRequest) {
 
 		//1、获取subject
 		Subject subject = SecurityUtils.getSubject();

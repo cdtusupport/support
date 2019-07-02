@@ -2,7 +2,7 @@ package com.cdtu.support.service.impl;
 
 import com.cdtu.support.mapper.NeedInfoMapper;
 import com.cdtu.support.pojo.*;
-import com.cdtu.support.service.NeedService;
+import com.cdtu.support.service.NeedInfoService;
 import com.cdtu.support.util.SupportUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Service
-public class NeedServiceImpl implements NeedService {
+public class NeedServiceImpl implements NeedInfoService {
 
 	@Autowired
 	NeedInfoMapper needInfoMapper;

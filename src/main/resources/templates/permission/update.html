@@ -12,18 +12,22 @@
             <div th:replace="common/bar::sidebar"></div>
 
             <div class="layui-body">
-                <form class="layui-form" th:action="@{/User/addUser}" method="post">
-
+                <form class="layui-form" th:action="@{/permission/update(id=${id})}" method="post">
+                    <input type="hidden" name="_method" value="put">
                     <div class="layui-form-item">
                         <label class="layui-form-label"></label>
-                        <div class="layui-input-inline" >
+                        <div class="layui-input-block" >
+                            <!--name="per"-->
                             <input type="checkbox"
                                    th:each="permission:${permissionList}"
-                                   th:name="${permission.id}"
+                                   name="permissionList"
                                    th:title="${permission.name}"
+                                   th:value="${permission.id}"
                                    th:attr="checked=${permissionIdList.contains(permission.id)?true:false}">
-                        </div>
+                        </div><br/>
+                        <button type="submit" class="layui-btn" >更新</button>
                     </div>
+
                 </form>
             </div>
 

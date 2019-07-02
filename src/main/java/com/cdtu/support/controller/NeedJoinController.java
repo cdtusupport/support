@@ -6,7 +6,9 @@ import com.cdtu.support.pojo.NeedInfo;
 import com.cdtu.support.pojo.NeedJoin;
 import com.cdtu.support.pojo.School;
 import com.cdtu.support.pojo.SchoolWithBLOBs;
+import com.cdtu.support.service.NeedInfoService;
 import com.cdtu.support.service.NeedJoinService;
+import com.cdtu.support.service.SchoolService;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
@@ -30,32 +32,11 @@ public class NeedJoinController {
 	NeedJoinService needJoinService;
 
 	@Autowired
-	NeedInfoMapper needInfoMapper;
+	NeedInfoService needInfoService;
 
 	@Autowired
-	SchoolMapper schoolMapper;
+	SchoolService schoolService;
 
-
-	@GetMapping("/toJoinPage")
-	public String toJoinPage(Map<String, Object> model) {
-		PageHelper.startPage(1, 5);
-		List<NeedInfo> needInfoList = needInfoMapper.selectByExample(null);
-		PageHelper.startPage(1, 5);
-		List<School> schoolList = schoolMapper.selectByExample(null);
-		model.put("needInfoList", needInfoList);
-		model.put("schoolList", schoolList);
-
-		return "needJoin/join";
-	}
-
-	@PostMapping("/join")
-	public String join(NeedJoin needJoin) {
-
-		needJoinService.addNeedJoin(needJoin);
-		System.out.println(needJoin.toString());
-
-		return "redirect:/school/list";
-	}
 
 	@GetMapping("/list")
 	public String list(Model model,
@@ -72,4 +53,24 @@ public class NeedJoinController {
 		return "needJoin/list";
 	}
 
+	@PostMapping("/join")
+	public String join(NeedJoin needJoin) {
+
+		needJoinService.addNeedJoin(needJoin);
+		System.out.println(needJoin.toString());
+
+		return "redirect:/school/list";
+	}
+
+	@GetMapping("/toJoinPage")
+	public String toJoinPage(Map<String, Object> model) {
+		PageHelper.startPage(1, 5);
+		List<NeedInfo> needInfoList = needInfoService.queryAll();
+		PageHelper.startPage(1, 5);
+		List<SchoolWithBLOBs> schoolList = schoolService.queryAll();
+		model.put("needInfoList", needInfoList);
+		model.put("schoolList", schoolList);
+
+		return "needJoin/join";
+	}
 }

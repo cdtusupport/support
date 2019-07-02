@@ -19,7 +19,7 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">请选择需求</label>
                 <div class="layui-input-block">
-                    <select name="inNeedId"  >
+                    <select name="inneedid"  >
                         <option value=""></option>
                         <option th:each="needInfo:${needInfoList}" th:value="${needInfo.id}" th:text="${needInfo.name}" >
                         </option>
@@ -44,7 +44,7 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">请选择所属学校</label>
                 <div class="layui-input-block">
-                    <select name="schoolName" lay-verify="required">
+                    <select name="schoolname" lay-verify="required">
                         <option value=""></option>
                         <option th:each="school:${schoolList}" th:value="${school.schoolname}" th:text="${school.schoolname}" ></option>
                     </select>

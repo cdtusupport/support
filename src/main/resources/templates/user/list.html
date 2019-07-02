@@ -4,84 +4,83 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>layout 后台大布局 - Layui</title>
-    <link rel="stylesheet" href="../../static/layui/css/layui.css" type="text/css">
+    <link rel="stylesheet" href="../../static/layui/css/layui.css" type="text/css" media="all">
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
-
     <div th:replace="common/bar::topbar"></div>
     <div th:replace="common/bar::sidebar"></div>
+
     <div class="layui-body">
-        <!-- 内容主体区域 -->
-        <form th:action="@{/recruit/queryByName}" class="layui-form">
+        <form th:action="@{/user/queryByName}" class="layui-form" style="margin:10px 10px 10px;">
             <div class="layui-form-item">
                 <div class="layui-inline">
-                    <label class="layui-form-label">高校名称</label>
+                    <label class="layui-form-label">用户查询</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="name" placeholder="请输入" class="layui-input">
+                        <input type="text" name="userName" placeholder="请输入姓名" class="layui-input">
                     </div>
                 </div>
                 <button type="submit" class="layui-btn layui-btn-normal">查询</button>
-                <a th:href="@{/recruit/toAddPage}" class="layui-btn layui-btn-normal">新增</a>
+                <a class="layui-btn layui-btn-danger " th:href="@{/user/toAddPage}">新增</a>
             </div>
         </form>
-
-
         <table class="layui-table">
             <thead>
             <tr>
-                <th>#</th>
-                <th>名称</th>
-                <th>内容</th>
-                <th>发布时间</th>
-                <th>其他</th>
+                <th>管理员编号</th>
+                <th>管理员名称</th>
+                <th>所属学校</th>
+                <th>电话</th>
+                <th>qq</th>
+                <th>邮箱</th>
+                <th>级别</th>
+                <th>创建时间</th>
                 <th>操作</th>
             </tr>
             </thead>
             <tbody>
-            <tr th:each="recruitInfo : ${recruitInfoList}">
-                <td th:text="${recruitInfo.id}"></td>
-                <td th:text="${recruitInfo.name}"></td>
-                <td th:text="${recruitInfo.content}"></td>
-                <td th:text="${recruitInfo.publishtime}"></td>
-                <td th:text="${recruitInfo.other}"></td>
+            <tr th:each="user:${userList}">
+                <td th:text="${user.id}"></td>
+                <td th:text="${user.username}"></td>
+                <td th:text="${user.schoolname}"></td>
+                <td th:text="${user.telephone}"></td>
+                <td th:text="${user.qq}"></td>
+                <td th:text="${user.email}"></td>
+                <td th:switch="${user.level}">
+                    <p th:case="1">超级管理员</p>
+                    <p th:case="2">管理员</p>
+                    <p th:case="*">其他</p>
+                </td>
+                <td th:text="${user.createtime}"></td>
                 <td>
-                    <a class="layui-btn"
-                       th:href="@{/recruit/toUpdatePage(id=${recruitInfo.id},pageSize=${pageSize},pageNum=${currentPage})}">编辑</a>
-                    <a th:attr="del_uri=@{/recruit(id=${recruitInfo.id},pageSize=${pageSize},pageNum=${currentPage})}"
-                       class="layui-btn layui-btn-danger deleteBtn">删除
-                    </a>
-                    <a class="layui-btn"
-                       th:href="@{/recruit/toUpdatePage(id=${recruitInfo.id},pageSize=${pageSize},pageNum=${currentPage})}">查看</a>
+                    <a class="layui-btn" href=""
+                       th:href="@{/user/toUpdatePage(id=${user.id})}">编辑</a>
+                    <a th:attr="del_uri=@{/user(id=${user.id})}" class="layui-btn layui-btn-danger deleteBtn "> 删除</a>
                 </td>
             </tr>
             </tbody>
         </table>
-
-        <div>
-        </div>
         <nav>
             <ul>
                 <li class="layui-btn ">
-                    <a th:href="@{/recruit/list(pageNum=1,pageSize=${pageSize})}">首页</a>
+                    <a th:href="@{/user/list(pageNum=1,pageSize=${pageSize})}">首页</a>
                 </li>
-                <li class="layui-btn" th:if="${pageNum} gt 0">
-                    <a th:href="@{/recruit/list(pageNum=(${pageNum}-1),pageSize=${pageSize})}">上一页</a>
+                <li class="layui-btn" th:if="${pageNum} gt -1">
+                    <a th:href="@{/user/list(pageNum=(${pageNum}-1),pageSize=${pageSize})}">上一页</a>
                 </li>
                 <li class="layui-btn" th:if="${pageNum} lt 1">
-                    <a th:href="@{/recruit/list(pageNum=1, pageSize=${pageSize})}">上一页</a>
+                    <a th:href="@{/user/list(pageNum=1, pageSize=${pageSize})}">上一页</a>
                 </li>
                 <li class="layui-btn" th:if="${pageNum} lt ${pages}">
-                    <a th:href="@{/recruit/list(pageNum=(${pageNum}+1),pageSize=${pageSize})}">下一页</a>
+                    <a th:href="@{/user/list(pageNum=(${pageNum}+1),pageSize=${pageSize})}">下一页</a>
                 </li>
                 <li class="layui-btn" th:if="${pageNum} ge ${pages}">
-                    <a th:href="@{/recruit/list(pageNum=${pages}, pageSize=${pageSize})}">下一页</a>
+                    <a th:href="@{/user/list(pageNum=${pages}, pageSize=${pageSize})}">下一页</a>
                 </li>
                 <li class="layui-btn">
-                    <a th:href="@{/recruit/list(pageNum=${pages}, pageSize=${pageSize})}">末页</a>
+                    <a th:href="@{/user/list(pageNum=${pages}, pageSize=${pageSize})}">末页</a>
                 </li>
             </ul>
-
         </nav>
 
         <form id="deleteSchoolForm" method="post">
@@ -97,8 +96,13 @@
 </div>
 <script src="../../static/layui/layui.js"></script>
 <script src="../../static/jquery/jquery-3.3.1.min.js"></script>
-
 <script>
+
+    $(".deleteBtn").click(function () {
+        $("#deleteSchoolForm").attr("action", $(this).attr("del_uri")).submit();
+        return false;
+    });
+
     layui.use(["layer", "form", "upload", "jquery", "element"], function () {
         // 注意：为了动态显示进度条，必须加载element组件
         var layer = layui.layer, upload = layui.upload, $ = layui.jquery, element = layui.element;
@@ -125,14 +129,6 @@
         });
 
     });
-</script>
-
-<script>
-    $(".deleteBtn").click(function () {
-        $("#deleteSchoolForm").attr("action", $(this).attr("del_uri")).submit();
-        return false;
-    });
-
 </script>
 
 

@@ -21,9 +21,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-/**
- * 文件上传及进度测试
- */
+
 @Controller
 @RequiresPermissions("work")
 public class workStateController {
@@ -32,12 +30,6 @@ public class workStateController {
     workStateService workstateService;
     @Autowired
     UserService userService;
-
-    /**
-     * 显示文件上传页
-     *
-     * @return
-     */
 
 
     @GetMapping("/workState/addWorkStatePage")

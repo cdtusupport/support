@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <button type="submit" class="layui-btn layui-btn-normal">查询</button>
-                <a class="layui-btn layui-btn-danger " th:href="@{/road/addRoad}">添加路线</a>
+                <a class="layui-btn layui-btn-danger " th:href="@{/road/toAddRoad}">添加路线</a>
     </div>
         </form>
 
@@ -40,20 +40,45 @@
             </tr>
             </thead>
             <tbody>
-            <tr th:each="road1:${roads}">
-                <td th:text="${road1.id}"></td>
-                <td th:text="${road1.name}"></td>
-                <td th:text="${road1.content}"></td>
-                <td th:text="${road1.publishtime}"></td>
-                <td th:text="${road1.other}"></td>
+            <tr th:each="road:${roadList}">
+                <td th:text="${road.id}"></td>
+                <td th:text="${road.name}"></td>
+                <td th:text="${road.content}"></td>
+                <td th:text="${road.publishtime}"></td>
+                <td th:text="${road.other}"></td>
                 <td >
-                    <a class="layui-btn" th:href="@{/road/toUpRoad(id=${road1.id})}">编辑</a>
-                    <button th:attr="del_uri=@{/road/}+${road1.id}" class="layui-btn layui-btn-danger deleteBtn" >删除</button>
+                    <a class="layui-btn" th:href="@{/road/toUpRoad(id=${road.id})}">编辑</a>
+                    <button th:attr="del_uri=@{/road/}+${road.id}" class="layui-btn layui-btn-danger deleteBtn" >删除</button>
                     <a class="layui-btn">查看</a>
                 </td>
             </tr>
             </tbody>
         </table>
+
+        <nav>
+            <ul>
+                <li class="layui-btn ">
+                    <a th:href="@{/road/list(pageNum=1,pageSize=${pageSize})}">首页</a>
+                </li>
+                <li class="layui-btn" th:if="${pageNum} gt -1">
+                    <a th:href="@{/road/list(pageNum=(${pageNum}-1),pageSize=${pageSize})}">上一页</a>
+                </li>
+                <li class="layui-btn" th:if="${pageNum} lt 1">
+                    <a th:href="@{/road/list(pageNum=1, pageSize=${pageSize})}">上一页</a>
+                </li>
+                <li class="layui-btn" th:if="${pageNum} lt ${pages}">
+                    <a th:href="@{/road/list(pageNum=(${pageNum}+1),pageSize=${pageSize})}">下一页</a>
+                </li>
+                <li class="layui-btn" th:if="${pageNum} ge ${pages}">
+                    <a th:href="@{/road/list(pageNum=${pages}, pageSize=${pageSize})}">下一页</a>
+                </li>
+                <li class="layui-btn">
+                    <a th:href="@{/road/list(pageNum=${pages}, pageSize=${pageSize})}">末页</a>
+                </li>
+            </ul>
+
+        </nav>
+
         <form id="deleteRoadForm" method="post">
             <input type="hidden" name="_method" value="delete">
         </form>
@@ -65,7 +90,7 @@
     </div>
 </div>
 <script src="../../static/layui/layui.js"></script>
-<script src="static/jquery/jquery-3.3.1.min.js"></script>
+<script src="../../static/jquery/jquery-3.3.1.min.js"></script>
 
 <script>
     //删除

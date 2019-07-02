@@ -49,11 +49,11 @@
                 <td th:text="${school.history}"></td>
                 <td th:text="${school.createtime}"></td>
                 <td>
-                    <a class="layui-btn" th:href="@{/school/toUpdatePage(id=${school.id},pageNum=${currentPage},pageSize=${pageSize})}">编辑</a>
-                    <button th:attr="del_uri=@{/school(id=${school.id},pageNum=${currentPage},pageSize=${pageSize})}"
+                    <a class="layui-btn" th:href="@{/school/toUpdatePage(id=${school.id},pageNum=${pageNum},pageSize=${pageSize})}">编辑</a>
+                    <button th:attr="del_uri=@{/school(id=${school.id},pageNum=${pageNum},pageSize=${pageSize})}"
                             class="layui-btn layui-btn-danger deleteBtn">删除
                     </button>
-                    <a class="layui-btn" th:href="@{/school/toUpdatePage(id=${school.id},pageNum=${currentPage},pageSize=${pageSize})}">查看</a>
+                    <a class="layui-btn" th:href="@{/school/toUpdatePage(id=${school.id},pageNum=${pageNum},pageSize=${pageSize})}">查看</a>
                 </td>
             </tr>
             </tbody>
@@ -63,16 +63,16 @@
                 <li class="layui-btn ">
                     <a th:href="@{/school/list(pageNum=1,pageSize=${pageSize})}">首页</a>
                 </li>
-                <li class="layui-btn" th:if="${currentPage} gt -1">
-                    <a th:href="@{/school/list(pageNum=(${currentPage}-1),pageSize=${pageSize})}">上一页</a>
+                <li class="layui-btn" th:if="${pageNum} gt -1">
+                    <a th:href="@{/school/list(pageNum=(${pageNum}-1),pageSize=${pageSize})}">上一页</a>
                 </li>
-                <li class="layui-btn" th:if="${currentPage} lt 1">
+                <li class="layui-btn" th:if="${pageNum} lt 1">
                     <a th:href="@{/school/list(pageNum=1, pageSize=${pageSize})}">上一页</a>
                 </li>
-                <li class="layui-btn" th:if="${currentPage} lt ${pages}">
-                    <a th:href="@{/school/list(pageNum=(${currentPage}+1),pageSize=${pageSize})}">下一页</a>
+                <li class="layui-btn" th:if="${pageNum} lt ${pages}">
+                    <a th:href="@{/school/list(pageNum=(${pageNum}+1),pageSize=${pageSize})}">下一页</a>
                 </li>
-                <li class="layui-btn" th:if="${currentPage} ge ${pages}">
+                <li class="layui-btn" th:if="${pageNum} ge ${pages}">
                     <a th:href="@{/school/list(pageNum=${pages}, pageSize=${pageSize})}">下一页</a>
                 </li>
                 <li class="layui-btn">

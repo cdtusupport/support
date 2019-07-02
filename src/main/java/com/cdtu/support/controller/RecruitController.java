@@ -16,6 +16,7 @@ import java.util.Map;
 
 @Controller
 @RequiresPermissions("recruit")
+@SuppressWarnings("All")
 public class RecruitController {
 
 	@Autowired
@@ -24,40 +25,30 @@ public class RecruitController {
 	@GetMapping("/recruit/list")
 	public String getRecruit(@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
 	                         @RequestParam(value = "pageSize", defaultValue = "6") Integer pageSize,
-	                         Map<String, Object> model){
+	                         Map<String, Object> model) {
 
 		Page<Object> page = PageHelper.startPage(pageNum, pageSize);
 		List<RecruitInfo> recruitInfoList = recruitService.queryAllRecruit();
 
 		model.put("recruitInfoList", recruitInfoList);
-		model.put("currentPage", pageNum);
+		model.put("pageNum", pageNum);
 		model.put("pages", page.getPages());
 		model.put("pageSize", pageSize);
 		return "recruit/list";
 	}
 
-	@GetMapping("/recruit/queryByName")
-	public String queryByName(@RequestParam("name") String name,
-	                          Map<String, Object> model){
-		if (StringUtils.isEmpty(name.trim())){
-			return "redirect:/recruit/list";
-		}
+	@PostMapping("/recruit")
+	public String addRecruit(RecruitInfo recruitInfo) {
+		recruitService.addRecruit(recruitInfo);
 
-		List<RecruitInfo> recruitInfoList = recruitService.queryByName(name.trim());
-		if (recruitInfoList == null){
-			return "redirect:/recruit/list";
-		}
-
-		model.put("recruitInfoList", recruitInfoList);
-		return "recruit/query";
-
+		return "redirect:/recruit/list";
 	}
 
 	@DeleteMapping("/recruit")
 	public String deleteRecruit(@RequestParam("id") String id,
 	                            @RequestParam("pageSize") Integer pageSize,
 	                            @RequestParam("pageNum") Integer pageNum,
-	                            RedirectAttributes redirectAttributes){
+	                            RedirectAttributes redirectAttributes) {
 
 		recruitService.deleteRecruit(id);
 
@@ -66,23 +57,11 @@ public class RecruitController {
 		return "redirect:/recruit/list";
 	}
 
-	@PostMapping("/recruit")
-	public String addRecruit(RecruitInfo recruitInfo){
-		recruitService.addRecruit(recruitInfo);
-
-		return "redirect:/recruit/list";
-	}
-
-	@GetMapping("/recruit/toAddPage")
-	public String toAddPage(){
-		return "recruit/add";
-	}
-
 	@PutMapping("/recruit")
 	public String updateRecruit(RecruitInfo recruitInfo,
 	                            @RequestParam("pageSize") Integer pageSize,
 	                            @RequestParam("pageNum") Integer pageNum,
-	                            RedirectAttributes redirectAttributes){
+	                            RedirectAttributes redirectAttributes) {
 
 		recruitService.updateRecruit(recruitInfo);
 		redirectAttributes.addAttribute("pageSize", pageSize);
@@ -91,11 +70,34 @@ public class RecruitController {
 		return "redirect:/recruit/list";
 	}
 
+	@GetMapping("/recruit/queryByName")
+	public String queryByName(@RequestParam("name") String name,
+	                          Map<String, Object> model) {
+		if (StringUtils.isEmpty(name.trim())) {
+			return "redirect:/recruit/list";
+		}
+
+		List<RecruitInfo> recruitInfoList = recruitService.queryByName(name.trim());
+		if (recruitInfoList == null) {
+			return "redirect:/recruit/list";
+		}
+
+		model.put("recruitInfoList", recruitInfoList);
+		return "recruit/query";
+
+	}
+
+	@GetMapping("/recruit/toAddPage")
+	public String toAddPage() {
+		return "recruit/add";
+	}
+
+
 	@GetMapping("/recruit/toUpdatePage")
 	public String toUpdatePage(@RequestParam("id") String id,
 	                           @RequestParam("pageSize") Integer pageSize,
 	                           @RequestParam("pageNum") Integer pageNum,
-	                           Map<String, Object> model){
+	                           Map<String, Object> model) {
 		RecruitInfo recruitInfo = recruitService.queryById(id);
 		model.put("recruitInfo", recruitInfo);
 		model.put("pageSize", pageSize);
@@ -104,7 +106,7 @@ public class RecruitController {
 	}
 
 	@GetMapping("/recruit/toFirstPage")
-	public String toFirstPage(){
+	public String toFirstPage() {
 		return "redirect:/recruit/list";
 	}
 

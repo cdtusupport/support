@@ -4,7 +4,7 @@ import com.cdtu.support.pojo.NeedInfo;
 
 import java.util.List;
 
-public interface NeedService {
+public interface NeedInfoService {
 
 	Integer addNeed(NeedInfo needInfo);
 
@@ -18,10 +18,6 @@ public interface NeedService {
 
 	NeedInfo queryById(String id);
 
-//	List<SchoolWithBLOBs> queryByCity(String city);
-//
-//	List<SchoolWithBLOBs> queryByIsGo(String isGo);
 
-	//List<SchoolWithBLOBs> queryByIsNeed(String isNeed);
 
 }

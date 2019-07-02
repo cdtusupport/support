@@ -31,7 +31,7 @@ public class SchoolController {
 		List<SchoolWithBLOBs> schoolList = schoolService.queryAll();
 
 		model.put("schools", schoolList);
-		model.put("currentPage", pageNum);
+		model.put("pageNum", pageNum);
 		model.put("pages", page.getPages());
 		model.put("pageSize", pageSize);
 

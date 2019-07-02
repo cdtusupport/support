@@ -13,4 +13,6 @@ public interface PermissionService {
 
 	List<String> queryAllPermissionNameBypId(List<Integer> ids);
 
+	void updatePermission(Integer id, List<Integer> permissionIds);
+
 }

@@ -7,7 +7,6 @@ import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -20,13 +19,14 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
+@SuppressWarnings("All")
 public class PortalController {
     //用户
     @Autowired
     UserService userService;
     //需求
     @Autowired
-    NeedService needService;
+    NeedInfoService needService;
     //政策
     @Autowired
     PolicyService policyService;
@@ -100,9 +100,9 @@ public class PortalController {
                 response.setContentType("application/force-download");// 设置强制下载不打开
                 if (request.getHeader("User-Agent").toLowerCase().indexOf("firefox") > 0) {
                     fileName = new String(fileName.getBytes("UTF-8"), "ISO8859-1"); // firefox浏览器
-                } else if (request.getHeader("User-Agent").toUpperCase().indexOf("MSIE") > 0) {
+                } else if (request.getHeader("user-Agent").toUpperCase().indexOf("MSIE") > 0) {
                     fileName = URLEncoder.encode(fileName, "UTF-8");// IE浏览器
-                }else if (request.getHeader("User-Agent").toUpperCase().indexOf("CHROME") > 0) {
+                }else if (request.getHeader("user-Agent").toUpperCase().indexOf("CHROME") > 0) {
                     fileName = new String(fileName.getBytes("UTF-8"), "ISO8859-1");// 谷歌
                 }
                 response.addHeader("Content-Disposition", "attachment;fileName=" + fileName);// 设置文件名

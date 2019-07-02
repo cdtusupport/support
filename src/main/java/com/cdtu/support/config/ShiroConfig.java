@@ -30,6 +30,11 @@ public class ShiroConfig {
 		filterChainDefinitionMap.put("/utf8-jsp/**", "anon");
 		filterChainDefinitionMap.put("/login", "anon");
 		filterChainDefinitionMap.put("/logout", "logout");
+		filterChainDefinitionMap.put("/index/**", "anon");
+		filterChainDefinitionMap.put("/jquery/**", "anon");
+		filterChainDefinitionMap.put("/layui/**", "anon");
+		filterChainDefinitionMap.put("/login/**", "anon");
+		filterChainDefinitionMap.put("/ueditor/**", "anon");
 
 		filterChainDefinitionMap.put("/indexShowPage", "anon");
 		filterChainDefinitionMap.put("/showPolicyPage", "anon");

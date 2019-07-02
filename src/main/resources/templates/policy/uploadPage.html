@@ -26,12 +26,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr th:each="policy:${policys}">
+                        <tr th:each="policy:${policyList}">
                             <td th:text="${policy.name}"></td>
                             <td th:text="${policy.publishtime}"></td>
                             <td>
                                 <a class="layui-btn layui-btn-danger deleteBtn " href="uploadPage.html"
-                                   th:href="@{/delectPolicy(name=${policy.name})}">
+                                   th:href="@{/deletePolicy(name=${policy.name})}">
                                     删除</a>
                             </td>
                         </tr>
@@ -42,16 +42,16 @@
                         <li class="layui-btn ">
                             <a th:href="@{/uploadPage(pageNum=1,pageSize=${pageSize})}">首页</a>
                         </li>
-                        <li class="layui-btn" th:if="${currentPage} gt -1">
-                            <a th:href="@{/uploadPage(pageNum=(${currentPage}-1),pageSize=${pageSize})}">上一页</a>
+                        <li class="layui-btn" th:if="${pageNum} gt -1">
+                            <a th:href="@{/uploadPage(pageNum=(${pageNum}-1),pageSize=${pageSize})}">上一页</a>
                         </li>
-                        <li class="layui-btn" th:if="${currentPage} lt 1">
+                        <li class="layui-btn" th:if="${pageNum} lt 1">
                             <a th:href="@{/uploadPage(pageNum=1, pageSize=${pageSize})}">上一页</a>
                         </li>
-                        <li class="layui-btn" th:if="${currentPage} lt ${pages}">
-                            <a th:href="@{/uploadPage(pageNum=(${currentPage}+1),pageSize=${pageSize})}">下一页</a>
+                        <li class="layui-btn" th:if="${pageNum} lt ${pages}">
+                            <a th:href="@{/uploadPage(pageNum=(${pageNum}+1),pageSize=${pageSize})}">下一页</a>
                         </li>
-                        <li class="layui-btn" th:if="${currentPage} ge ${pages}">
+                        <li class="layui-btn" th:if="${pageNum} ge ${pages}">
                             <a th:href="@{/uploadPage(pageNum=${pages}, pageSize=${pageSize})}">下一页</a>
                         </li>
                         <li class="layui-btn">

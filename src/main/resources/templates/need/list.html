@@ -24,7 +24,7 @@
                 </div>
                 <button type="submit" class="layui-btn layui-btn-normal">查询</button>
 <!--添加需求==============================================================-->
-                <a class="layui-btn layui-btn-danger" th:href="@{/need/addNeed}">
+                <a class="layui-btn layui-btn-danger" th:href="@{/need/toAddNeedPage}">
                     发布需求</a>
 
             </div>
@@ -46,8 +46,7 @@
             </thead>
 
             <tbody>
-                <tr th:each="need:${needs}">
-                    <!--/*@thymesVar id="id" type=""*/-->
+                <tr th:each="need:${needList}">
                     <td th:text="${need.id}"></td>
                     <td th:text="${need.name}"></td>
                     <td th:text="${need.userid}"></td>
@@ -55,7 +54,6 @@
                     <td th:text="${need.level}"></td>
                     <td th:text="${need.info}"></td>
                     <td th:text="${need.publishtime}"></td>
-                    <!--<td th:text="${need.edittime}"></td>-->
                     <td >
                         <a class="layui-btn" th:href="@{/need/toUpNeed(id=${need.id})}">编辑</a>
                         <button th:attr="del_uri=@{/need/}+${need.id}" class="layui-btn layui-btn-danger deleteBtn" >删除</button>
@@ -68,22 +66,22 @@
         <nav>
             <ul>
                 <li class="layui-btn ">
-                    <a th:href="@{/need/need(pageNum=1,pageSize=${pageSize})}">首页</a>
+                    <a th:href="@{/need/list(pageNum=1,pageSize=${pageSize})}">首页</a>
                 </li>
-                <li class="layui-btn" th:if="${currentPage} gt -1">
-                    <a th:href="@{/need/need(pageNum=(${currentPage}-1),pageSize=${pageSize})}">上一页</a>
+                <li class="layui-btn" th:if="${pageNum} gt -1">
+                    <a th:href="@{/need/list(pageNum=(${pageNum}-1),pageSize=${pageSize})}">上一页</a>
                 </li>
-                <li class="layui-btn" th:if="${currentPage} lt 1">
-                    <a th:href="@{/need/need(pageNum=1, pageSize=${pageSize})}">上一页</a>
+                <li class="layui-btn" th:if="${pageNum} lt 1">
+                    <a th:href="@{/need/list(pageNum=1, pageSize=${pageSize})}">上一页</a>
                 </li>
-                <li class="layui-btn" th:if="${currentPage} lt ${pages}">
-                    <a th:href="@{/need/need(pageNum=(${currentPage}+1),pageSize=${pageSize})}">下一页</a>
+                <li class="layui-btn" th:if="${pageNum} lt ${pages}">
+                    <a th:href="@{/need/list(pageNum=(${pageNum}+1),pageSize=${pageSize})}">下一页</a>
                 </li>
-                <li class="layui-btn" th:if="${currentPage} ge ${pages}">
-                    <a th:href="@{/need/need(pageNum=${pages}, pageSize=${pageSize})}">下一页</a>
+                <li class="layui-btn" th:if="${pageNum} ge ${pages}">
+                    <a th:href="@{/need/list(pageNum=${pages}, pageSize=${pageSize})}">下一页</a>
                 </li>
                 <li class="layui-btn">
-                    <a th:href="@{/need/need(pageNum=${pages}, pageSize=${pageSize})}">末页</a>
+                    <a th:href="@{/need/list(pageNum=${pages}, pageSize=${pageSize})}">末页</a>
                 </li>
             </ul>
         </nav>
@@ -98,11 +96,11 @@
     </div>
 </div>
 <script src="../../static/layui/layui.js"></script>
-<script src="static/jquery/jquery-3.3.1.min.js"></script>
+<script src="../../static/jquery/jquery-3.3.1.min.js"></script>
 
 <script>
     $(".deleteBtn").click(function () {
-        $("#deleteNeedFrom").attr("action",$(this).attr("del_uri")).submit();
+        $("#deleteNeedFrom").attr("action", $(this).attr("del_uri")).submit();
         return false;
     });
     layui.use(["layer", "form", "upload", "jquery", "element"], function () {

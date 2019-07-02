@@ -3,6 +3,7 @@ package com.cdtu.support.controller;
 
 import com.cdtu.support.pojo.Policy;
 import com.cdtu.support.service.PolicyService;
+import com.cdtu.support.util.SupportUtil;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.apache.ibatis.jdbc.Null;
@@ -27,6 +28,7 @@ import java.util.*;
  */
 @Controller
 @RequiresPermissions("policy")
+@SuppressWarnings("All")
 public class PolicyController {
 
     @Autowired
@@ -38,18 +40,18 @@ public class PolicyController {
 
 
     @GetMapping("/uploadPage")
-    public String showUploadPage(@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
+    public String toUploadPage(@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
                                  @RequestParam(value = "pageSize", defaultValue = "6") Integer pageSize,
                                  Map<String, Object> model) {
         Page<Object> page = PageHelper.startPage(pageNum, pageSize);
         List<Policy> policyList = policyService.queryAll();;
-        model.put("policys", policyList);
-        model.put("currentPage", pageNum);
+        model.put("policyList", policyList);
+        model.put("pageNum", pageNum);
         model.put("pages", page.getPages());
         model.put("pageSize", pageSize);
         return "policy/uploadPage";
     }
-    @GetMapping("/delectPolicy")
+    @GetMapping("/deletePolicy")
     public String delectPolicy(String name){
         List<Policy> list=policyService.queryByName(name);
         //文件夹中删除文件
@@ -62,7 +64,6 @@ public class PolicyController {
     @PostMapping("upload")
     @ResponseBody
     public Map<String, Object> upload(MultipartFile file){
-//    public String upload(MultipartFile file){
         Map<String, Object> result = new HashMap<>();
         File path = null;
         try {
@@ -89,15 +90,13 @@ public class PolicyController {
 //            result.put("msg", "未获取到有效的文件信息，请重新上传!");
         }
         Policy policy=new Policy();
-        policy.setId(UUID.randomUUID().toString().substring(0,5));
+        policy.setId(SupportUtil.getUUID());
         policy.setName(file.getOriginalFilename());
         policy.setPath(path.toString());
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
-        policy.setPublishtime(df.format(new Date()));
+        policy.setPublishtime(SupportUtil.getTime());
         addAlterPolicy(policy);
 
         return result;
-//        return  "redirect:/uploadPage";
     }
     public void addAlterPolicy(Policy policy)
     {
@@ -111,7 +110,5 @@ public class PolicyController {
         }
         return;
     }
-
-
 
 }
