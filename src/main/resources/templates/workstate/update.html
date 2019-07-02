@@ -15,10 +15,9 @@
             <div th:replace="common/bar::sidebar"></div>
 
             <div class="layui-body">
-                <form class="layui-form" th:action="@{/workState}" method="post">
-                    <input type="hidden" name="_method" value="put">
+                <form class="layui-form" th:action="@{/updateWorkState}" method="post">
+                    <input name="userid" th:value="${session.userId}" type="hidden">
 <!--                    //因为没有设置session所以先定义一个值-->
-                    <input name="userid" value="130ad" type="hidden">
                     <input type="text" name="id" style="display:none"  th:value="${workState.id}" >
                     <div class="layui-form-item" style=" margin:10px;">
                         <label class="layui-form-label">标题</label>

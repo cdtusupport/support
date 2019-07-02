@@ -14,4 +14,6 @@ public interface workStateService {
      void addWorkState(WorkState workState);
 
      WorkState queryById(String id);
+
+    void updateWorkState(WorkState workState);
 }

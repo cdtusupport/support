@@ -51,4 +51,14 @@ public class workStateServiceImpl implements workStateService {
         return workState;
     }
 
+    @Override
+    public void updateWorkState(WorkState workState) {
+        WorkState workState1=workStateMapper.selectByPrimaryKey(workState.getId());
+        if (workState1==null){
+            return;
+        }
+        workStateMapper.updateByPrimaryKeySelective(workState);
+        return;
+    }
+
 }

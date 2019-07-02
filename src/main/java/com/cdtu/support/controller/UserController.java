@@ -35,7 +35,6 @@ public class UserController {
 	                           Map<String, Object> model) {
 		Page<Object> page = PageHelper.startPage(pageNum, pageSize);
 		List<User> userList = userService.queryAll();
-		;
 		model.put("userList", userList);
 		model.put("pageNum", pageNum);
 		model.put("pages", page.getPages());
@@ -45,7 +44,6 @@ public class UserController {
 
 	@PostMapping(value = "/user")
 	public String addUser(User user) {
-		userService.deleteByPrimaryKey(user.getId());
 		user.setId(SupportUtil.getUUID());
 		List<SchoolWithBLOBs> schoolWithBLOBs = schoolService.queryByName(user.getSchoolname());
 		user.setSchoolid(schoolWithBLOBs.get(0).getId());
@@ -53,7 +51,15 @@ public class UserController {
 		userService.addUser(user);
 		return "redirect:/user/list";
 	}
-
+	//更新用户
+	@PostMapping(value = "/updateUser")
+	public String updateUser(User user) {
+		List<SchoolWithBLOBs> schoolWithBLOBs = schoolService.queryByName(user.getSchoolname());
+		user.setSchoolid(schoolWithBLOBs.get(0).getId());
+		user.setCreatetime(SupportUtil.getTime());
+		userService.updateUser(user);
+		return "redirect:/user/list";
+	}
 	@DeleteMapping("/user")
 	public String deleteUser(String id) {
 		userService.deleteByPrimaryKey(id);
@@ -72,11 +78,11 @@ public class UserController {
 		if (userList == null) {
 			return "redirect:/user/list";
 		}
-		model.put("users", userList);
-		model.put("currentPage", pageNum);
-		model.put("pages", page.getPages());
-		model.put("pageSize", pageSize);
-		return "user/list";
+        model.put("userList", userList);
+        model.put("pageNum", pageNum);
+        model.put("pages", page.getPages());
+        model.put("pageSize", pageSize);
+        return "user/list";
 	}
 
 

@@ -62,7 +62,6 @@ public class workStateController {
 	@PostMapping("/workState")
 	public String addworkState(WorkState workState) {
 		workstateService.deleteByPrimaryKey(workState.getId());
-
 		System.out.println(workState.getUserid());
 		workState.setId(SupportUtil.getUUID());
 		workState.setPublictime(SupportUtil.getTime());
@@ -70,7 +69,13 @@ public class workStateController {
 		return "redirect:/workState/list";
 	}
 
-	@DeleteMapping("/workState")
+	@PostMapping("/updateWorkState")
+	public String updateWorkState(WorkState workState) {
+		workState.setPublictime(SupportUtil.getTime());
+		workstateService.updateWorkState(workState);
+		return "redirect:/workState/list";
+	}
+	@GetMapping("/deleteWorkstate")
 	public String deleteWorkstate(String id) {
 		workstateService.deleteByPrimaryKey(id);
 		return "redirect:/workState/list";
@@ -90,9 +95,18 @@ public class workStateController {
 		if (workStateList == null) {
 			return "redirect:/workState/list";
 		}
-		System.out.println(workStateList.get(0).getName());
+		for (WorkState workState : workStateList) {
+			if (workState.getUserid() == null) {
+				continue;
+			} else {
+				if (userService.queryById(workState.getUserid()).getUsername() == null) {
+					continue;
+				} else
+					workState.setUserid(userService.queryById(workState.getUserid()).getUsername());
+			}
+		}
 		model.put("workStateList", workStateList);
-		model.put("currentPage", pageNum);
+		model.put("pageNum", pageNum);
 		model.put("pages", page.getPages());
 		model.put("pageSize", pageSize);
 		return "workstate/list";

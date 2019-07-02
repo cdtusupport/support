@@ -12,7 +12,7 @@
             <div th:replace="common/bar::sidebar"></div>
 
             <div class="layui-body">
-                <form class="layui-form" th:action="@{/User/addUser}" method="post">
+                <form class="layui-form" th:action="@{/updateUser}" method="post">
                     <input type="text" name="id" style="display:none"  th:value="${user.id}" >
                     <div class="layui-form-item">
                         <label class="layui-form-label">管理员名称</label>
@@ -60,10 +60,13 @@
                     </div>
                      <div class="layui-form-item">
                         <label class="layui-form-label">单选框</label>
-                        <div class="layui-input-block">
-                            <input type="radio" name="level" value="1" title="超级管理员">
-                            <input type="radio" name="level" value="2" title="管理员" checked>
-                        </div>
+                         <div class="layui-input-block">
+                             <input type="radio" name="level" value="1" title="超级管理员">
+                             <input type="radio" name="level" value="2" title="管理员">
+                             <input type="radio" name="level" value="3" title="普通管理员">
+                             <input type="radio" name="level" value="4" title="数据管理员">
+                             <input type="radio" name="level" value="5" title="普通人员" checked>
+                         </div>
                     </div>
                     <div class="layui-form-item">
                         <div class="layui-input-block">

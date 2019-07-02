@@ -14,4 +14,6 @@ public interface UserService {
 	void addUser(User user);
 
 	User queryById(String id);
+
+    void updateUser(User user);
 }
