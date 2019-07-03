@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>layout 后台大布局 - Layui</title>
+    <link rel="stylesheet" href="../../static/layui/css/layui.css" type="text/css">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+     <!--抽取公共部分===================================-->
+    <div th:replace="common/bar::topbar"></div>
+    <div th:replace="common/bar::sidebar"></div>
+
+    <div class="layui-body">
+<!--//查询功能==========================================================-->
+        <form th:action="@{/need/queryNeed}"class="layui-form">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">需求检索</label>
+                    <div class="layui-input-inline">
+                        <input type="text"name="name"  placeholder="请输入" class="layui-input">
+                    </div>
+                </div>
+                <button type="submit" class="layui-btn layui-btn-normal">查询</button>
+<!--添加需求==============================================================-->
+                <a class="layui-btn layui-btn-danger" th:href="@{/need/addNeed}">
+                    发布需求</a>
+
+            </div>
+        </form>
+
+        <table class="layui-table">
+            <thead>
+                <tr>
+                    <th>需求id</th>
+                    <th>需求名称</th>
+                    <th>发布者id</th>
+                    <th>发布学校id</th>
+                    <th>紧急状态</th>
+                    <th>发布内容</th>
+                    <th>发布时间</th>
+                    <!--<th>最后修改时间</th>-->
+                    <th>操作</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr th:each="need:${needs}">
+                    <!--/*@thymesVar id="id" type=""*/-->
+                    <td th:text="${need.id}"></td>
+                    <td th:text="${need.name}"></td>
+                    <td th:text="${need.userid}"></td>
+                    <td th:text="${need.schoolid}"></td>
+                    <td th:text="${need.level}"></td>
+                    <td th:text="${need.info}"></td>
+                    <td th:text="${need.publishtime}"></td>
+                    <!--<td th:text="${need.edittime}"></td>-->
+                    <td >
+                        <a class="layui-btn" th:href="@{/need/toUpNeed(id=${need.id})}">编辑</a>
+                        <button th:attr="del_uri=@{/need/}+${need.id}" class="layui-btn layui-btn-danger deleteBtn" >删除</button>
+                        <a class="layui-btn">查看</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <nav>
+            <ul>
+                <li class="layui-btn ">
+                    <a th:href="@{/needs(pageNum=1,pageSize=${pageSize})}">首页</a>
+                </li>
+                <li class="layui-btn" th:if="${currentPage} gt -1">
+                    <a th:href="@{/needs(pageNum=(${currentPage}-1),pageSize=${pageSize})}">上一页</a>
+                </li>
+                <li class="layui-btn" th:if="${currentPage} lt 1">
+                    <a th:href="@{/needs(pageNum=1, pageSize=${pageSize})}">上一页</a>
+                </li>
+                <li class="layui-btn" th:if="${currentPage} lt ${pages}">
+                    <a th:href="@{/needs(pageNum=(${currentPage}+1),pageSize=${pageSize})}">下一页</a>
+                </li>
+                <li class="layui-btn" th:if="${currentPage} ge ${pages}">
+                    <a th:href="@{/needs(pageNum=${pages}, pageSize=${pageSize})}">下一页</a>
+                </li>
+                <li class="layui-btn">
+                    <a th:href="@{/needs(pageNum=${pages}, pageSize=${pageSize})}">末页</a>
+                </li>
+            </ul>
+        </nav>
+
+    <form id="deleteNeedFrom" method="post">
+        <input type="hidden" name="_method" value="delete">
+    </form>
+    </div>
+
+    <div class="layui-footer">
+        <!-- 底部固定区域 -->
+        © layui.com - 底部固定区域
+    </div>
+</div>
+<script src="../../static/layui/layui.js"></script>
+<script src="static/jquery/jquery-3.3.1.min.js"></script>
+
+<script th:inline="none">
+    $(".deleteBtn").click(function () {
+        $("#deleteSchoolForm").attr("action", $(this).attr("del_uri")).submit();
+        return false;
+    });
+</script>
+<script>
+    layui.use(["layer", "form", "upload", "jquery", "element"], function () {
+        // 注意：为了动态显示进度条，必须加载element组件
+        var layer = layui.layer, upload = layui.upload, $ = layui.jquery, element = layui.element;
+        upload.render({
+            accept: "file",
+            elem: "#addFile",
+            exts: 'pdf|dox', //只允许上传pdf文件
+            auto: false,   //关闭文件自动上传
+            bindAction: "#upload", //文件上传触发按钮
+            url: "upload",
+            done: function (res, index, upload) {
+                if (res.code != 200) {
+                    layer.open({
+                        icon: 2,
+                        skin: "layui-layer-molv",
+                        content: res.msg
+                    });
+                }
+                location.reload();
+            },
+            error: function (res) {
+
+            }
+        });
+
+    });
+</script>
+</body>
+</html>

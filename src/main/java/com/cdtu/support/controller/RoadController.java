@@ -50,18 +50,18 @@ public class RoadController {
 	@PutMapping(value = "/upRoad")
 	public String updateRoad(@RequestParam("id") String id,
 	                         @RequestParam("name") String name,
-	                         @RequestParam("content") String content,
-	                         @RequestParam("pageNum") Integer pageNum,
-	                         @RequestParam("pageSize") Integer pageSize,
-	                         RedirectAttributes redirectAttributes) {
+	                         @RequestParam("content") String content
+//	                         @RequestParam("pageNum") Integer pageNum,
+//	                         @RequestParam("pageSize") Integer pageSize,
+	                       /*  RedirectAttributes redirectAttributes*/) {
 
 		Road road = new Road();
 		road.setId(id);
 		road.setName(name);
 		road.setContent(content);
 		Integer integer = roadService.updateRoad(road);
-		redirectAttributes.addAttribute("pageNum", pageNum);
-		redirectAttributes.addAttribute("pageSize", pageSize);
+//		redirectAttributes.addAttribute("pageNum", pageNum);
+//		redirectAttributes.addAttribute("pageSize", pageSize);
 		if (integer == 1) {
 			return "redirect:/road/list";
 		}

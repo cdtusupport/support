@@ -38,8 +38,21 @@ public class NeedInfoController {
 
 	//添加需求
 	@PostMapping("/adneed")
-	public String addNeed(NeedInfo need) {
-		needInfoService.addNeed(need);
+	public String addNeed(
+			@RequestParam("name") String name,
+			@RequestParam("info") String content,
+			@RequestParam("level") String level,
+			@RequestParam("userid")  String userId,
+			@RequestParam("schoolid") String schoolid
+	) {
+		NeedInfo needInfo = new NeedInfo();
+		needInfo.setInfo(content.trim());
+		needInfo.setName(name.trim());
+		needInfo.setUserid(userId.trim());
+		needInfo.setSchoolid(schoolid.trim());
+		System.out.println("userId:"+userId+"schoolid"+schoolid);
+		needInfo.setLevel(level.trim());
+		needInfoService.addNeed(needInfo);
 		return "redirect:/need/list";
 	}
 
