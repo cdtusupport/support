@@ -57,6 +57,7 @@ public class LoginController {
 		try {
 			subject.login(usernamePasswordToken);
 			httpServletRequest.getSession().setAttribute("userId", userList.get(0).getId());
+			httpServletRequest.getSession().setAttribute("schoolid", userList.get(0).getSchoolid());
 			httpServletRequest.getSession().setAttribute("username", userList.get(0).getUsername());
 			return "redirect:/index";
 		} catch (UnknownAccountException e) {
