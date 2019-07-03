@@ -3,25 +3,27 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>layout 后台大布局 - Layui</title>
+        <title>西藏援藏系统</title>
         <link rel="stylesheet" href="../static/layui/css/layui.css" type="text/css">
+        <link rel="stylesheet" href="../static/login/css/main.css">
     </head>
     <body class="layui-layout-body">
         <div class="layui-layout layui-layout-admin">
             <div class="layui-header">
-                <div class="layui-logo">layui 后台布局</div>
+                <div class="layui-logo">西藏援藏系统</div>
                 <!-- 头部区域（可配合layui已有的水平导航） -->
                 <div th:replace="common/bar::topbar"></div>
                 <div th:replace="common/bar::sidebar"></div>
 
-                <div class="layui-body">
+                <div >
                     <!-- 内容主体区域 -->
-                    <h1>Index</h1>
+                    <div class="container-login100" style="background-image: url('../static/login/images/xz.jpg');">
+                    </div>
                 </div>
 
                 <div class="layui-footer">
                     <!-- 底部固定区域 -->
-                    © layui.com - 底部固定区域
+                    © CDTU
                 </div>
             </div>
         </div>
