@@ -20,7 +20,9 @@
         </jdbcConnection>
 
         <javaTypeResolver>
-            <property name="forceBigDecimals" value="false"/>
+            <property name="
+
+" value="false"/>
         </javaTypeResolver>
 
         <javaModelGenerator targetPackage="com.cdtu.support.pojo" targetProject="src\main\java">

@@ -47,12 +47,12 @@
                 <td th:text="${recruitInfo.other}"></td>
                 <td>
                     <a class="layui-btn"
-                       th:href="@{/recruit/toUpdatePage(id=${recruitInfo.id},pageSize=${pageSize},pageNum=${currentPage})}">编辑</a>
-                    <a th:attr="del_uri=@{/recruit(id=${recruitInfo.id},pageSize=${pageSize},pageNum=${currentPage})}"
+                       th:href="@{/recruit/toUpdatePage(id=${recruitInfo.id},pageSize=${pageSize},pageNum=${pageNum})}">编辑</a>
+                    <a th:attr="del_uri=@{/recruit(id=${recruitInfo.id},pageSize=${pageSize},pageNum=${pageNum})}"
                        class="layui-btn layui-btn-danger deleteBtn">删除
                     </a>
                     <a class="layui-btn"
-                       th:href="@{/recruit/toUpdatePage(id=${recruitInfo.id},pageSize=${pageSize},pageNum=${currentPage})}">查看</a>
+                       th:href="@{/recruit/toUpdatePage(id=${recruitInfo.id},pageSize=${pageSize},pageNum=${pageNum})}">查看</a>
                 </td>
             </tr>
             </tbody>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>layout 后台大布局 - Layui</title>
+    <title>西藏援藏系统</title>
     <link rel="stylesheet" href="../../static/layui/css/layui.css" type="text/css" media="all">
 </head>
 
@@ -16,14 +16,13 @@
 
         <!-- 内容主体区域 -->
         <form class="layui-form" th:action="@{/adneed}" method="post">
-            <input type="hidden" name="userid"th:value="${session.userId}">
-            <input type="hidden" name="schoolid"th:value="${session.schoolid}">
             <div class="layui-form-item">
                 <label class="layui-form-label">需求名称</label>
                 <div class="layui-input-block">
                     <input type="text" name="name" required  lay-verify="required" placeholder="请输入内容" autocomplete="off" class="layui-input">
                 </div>
             </div>
+
             <div class="layui-form-item layui-form-text">
                 <label class="layui-form-label">需求内容</label>
                 <div class="layui-input-block">
@@ -55,7 +54,7 @@
 
     <div class="layui-footer">
         <!-- 底部固定区域 -->
-        © layui.com - 底部固定区域
+        © CDTU
     </div>
 </div>
 <script src="../../static/layui/layui.js"></script>

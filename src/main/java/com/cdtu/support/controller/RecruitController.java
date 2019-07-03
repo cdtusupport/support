@@ -46,8 +46,8 @@ public class RecruitController {
 
 	@DeleteMapping("/recruit")
 	public String deleteRecruit(@RequestParam("id") String id,
-	                            @RequestParam("pageSize") Integer pageSize,
-	                            @RequestParam("pageNum") Integer pageNum,
+								@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
+								@RequestParam(value = "pageSize", defaultValue = "6") Integer pageSize,
 	                            RedirectAttributes redirectAttributes) {
 
 		recruitService.deleteRecruit(id);
@@ -59,8 +59,8 @@ public class RecruitController {
 
 	@PutMapping("/recruit")
 	public String updateRecruit(RecruitInfo recruitInfo,
-	                            @RequestParam("pageSize") Integer pageSize,
-	                            @RequestParam("pageNum") Integer pageNum,
+								@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
+								@RequestParam(value = "pageSize", defaultValue = "6") Integer pageSize,
 	                            RedirectAttributes redirectAttributes) {
 
 		recruitService.updateRecruit(recruitInfo);
@@ -72,6 +72,8 @@ public class RecruitController {
 
 	@GetMapping("/recruit/queryByName")
 	public String queryByName(@RequestParam("name") String name,
+							  @RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
+							  @RequestParam(value = "pageSize", defaultValue = "6") Integer pageSize,
 	                          Map<String, Object> model) {
 		if (StringUtils.isEmpty(name.trim())) {
 			return "redirect:/recruit/list";
@@ -95,8 +97,8 @@ public class RecruitController {
 
 	@GetMapping("/recruit/toUpdatePage")
 	public String toUpdatePage(@RequestParam("id") String id,
-	                           @RequestParam("pageSize") Integer pageSize,
-	                           @RequestParam("pageNum") Integer pageNum,
+							   @RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
+							   @RequestParam(value = "pageSize", defaultValue = "6") Integer pageSize,
 	                           Map<String, Object> model) {
 		RecruitInfo recruitInfo = recruitService.queryById(id);
 		model.put("recruitInfo", recruitInfo);

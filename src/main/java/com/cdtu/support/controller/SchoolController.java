@@ -41,8 +41,8 @@ public class SchoolController {
 	@GetMapping("school/queryByName")
 	public String queryByName(@RequestParam("schoolName") String schoolName,
 	                          Map<String, Object> model,
-	                          @RequestParam("pageSize") Integer pageSize,
-	                          @RequestParam("pageNum") Integer pageNum) {
+	                          @RequestParam(value = "pageSize", defaultValue = "6") Integer pageSize,
+	                          @RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum) {
 
 		if (StringUtils.isEmpty(schoolName.trim())) {
 			return "redirect:/school/list";

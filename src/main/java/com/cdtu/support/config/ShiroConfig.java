@@ -46,7 +46,7 @@ public class ShiroConfig {
 		filterChainDefinitionMap.put("/showWorkStatePage", "anon");
 		filterChainDefinitionMap.put("/showWorkStatePageDetaile", "anon");
 		filterChainDefinitionMap.put("/showRecruitPage", "anon");
-
+		filterChainDefinitionMap.put("/needAdd", "anon");
 		filterChainDefinitionMap.put("/**", "authc");
 
 		shiroFilterFactoryBean.setLoginUrl("/toLogin");

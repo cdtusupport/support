@@ -39,7 +39,7 @@
                 <div class="inForBox01">
                     <ul class="pageMain" th:each="recruit:${recruitInfoList}">
                         <li>
-                            <a title="点击查看详情" th:onclick="followForum([[${recruit.id}]],[[${recruit.name}]],
+                            <a title="点击查看详情" th:onclick="followForum([[${recruit.id}]],[[${recruit.name}]], [[${recruit.content}]],
                             [[${recruit.publishtime}]],this);">
                                 <span th:text="${recruit.name}"></span>
                                 <span th:text="${recruit.publishtime}"></span>
@@ -67,8 +67,8 @@
         </div>
     </body>
     <script>
-        function followForum(id, name, publishtime,this1) {
-            layer.msg('ID:'+id+'</br>'+'名称:'+name+'</br>'+'发布时间:'+publishtime);
+        function followForum(id, name, content,publishtime,this1) {
+            layer.msg('ID:'+id+'</br>'+'名称:'+name+'</br>'+'内容:'+content+'</br>'+'发布时间:'+publishtime);
         }
     </script>
 </html>
